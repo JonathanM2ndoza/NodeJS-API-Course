@@ -57,3 +57,16 @@ Update on package.json
 
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-JS$ npm run dev
 
+> basic-node-js@1.0.0 dev /home/jmendoza/IdeaProjects/NodeJS-API-Course/Basic-Node-JS
+> nodemon app.server.js
+
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.server.js`
+
+
+
