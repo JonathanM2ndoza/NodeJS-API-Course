@@ -1,0 +1,14 @@
+{
+    "name": "basic-node-js",
+    "version": "1.0.0",
+    "description": "API Develop with Node JS",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon app.server.js"
+    },
+    "author": "Jonathan Mendoza",
+    "license": "ISC",
+    "dependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
