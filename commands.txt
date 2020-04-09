@@ -82,3 +82,7 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$
 
 #################################### body-parser ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i body-parser
+
+#################################### express-validator (use version 5.3.1) ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i express-validator@5.3.1
+

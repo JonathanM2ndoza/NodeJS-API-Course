@@ -3,7 +3,8 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const { routerPosts } = require('./routes/posts');
+const expressValidator = require('express-validator');
+const { postRoutes } = require('./routes/posts');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -18,8 +19,10 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 // Middleware
 app.use(morgan('dev'));
 app.use(bodyParser.json());
+app.use(expressValidator());
 
-app.use('/', routerPosts);
+// Routes
+app.use('/api/v1', postRoutes);
 
 app.listen(port, () => {
     console.log(`A NodeJS API is listining on port: ${port}`);
