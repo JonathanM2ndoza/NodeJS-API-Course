@@ -78,4 +78,7 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Node-API$ npm i
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i dotenv
 
 #################################### Mongoose ####################################
-jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i moongoose
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i mongoose
+
+#################################### body-parser ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i body-parser
