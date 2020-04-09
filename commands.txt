@@ -71,3 +71,11 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-JS$ 
 #################################### Install express ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-JS$ npm i express
 
+#################################### Install morgan ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Node-API$ npm i morgan
+
+#################################### Dotenv ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i dotenv
+
+#################################### Mongoose ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i moongoose
