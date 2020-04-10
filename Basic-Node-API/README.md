@@ -4,6 +4,12 @@ Example of an basic API RESTful with Node JS and Mongo DB Atlas
 
 ### MongoDB Atlas
 
+- Create DATABASE and COLLECTION
+- Create Database User
+- Add your IP Address (public) in IP Whitelist, Network Access
+
+DATABASE
+
 ![Screenshot](prtsc/NodeJS-API-V1-1.png)
 
 ### Setup Application with MongoDB Atlas
