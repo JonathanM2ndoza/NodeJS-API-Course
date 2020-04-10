@@ -44,7 +44,6 @@ Is this OK? (yes) yes
 └────────────────────────────────────────────────────────────┘
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-JS$ 
 
-
 #################################### Install nodemon ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-JS$ npm i nodemon
 
@@ -74,15 +73,118 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-JS$ 
 #################################### Install morgan ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Node-API$ npm i morgan
 
-#################################### Dotenv ####################################
+#################################### Install Dotenv ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i dotenv
 
-#################################### Mongoose ####################################
+#################################### Install Mongoose ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i mongoose
 
-#################################### body-parser ####################################
+#################################### Install body-parser ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i body-parser
 
-#################################### express-validator (use version 5.3.1) ####################################
+#################################### Install express-validator (use version 5.3.1) ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Basic-Node-API$ npm i express-validator@5.3.1
+
+
+.
+.
+.
+.
+.
+
+
+#################################### Create a package.json ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (intermediate-node-api) 
+version: (1.0.0) 
+description: Intermediate nodeJS API
+entry point: (index.js) src/app.js
+test command: 
+git repository: 
+keywords: node API RESTful
+author: Jonathan S Mendoza
+license: (ISC) MIT
+About to write to /home/jmendoza/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API/package.json:
+
+{
+  "name": "intermediate-node-api",
+  "version": "1.0.0",
+  "description": "Intermediate nodeJS API",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "API",
+    "RESTful"
+  ],
+  "author": "Jonathan S Mendoza",
+  "license": "MIT"
+}
+
+
+Is this OK? (yes) yes
+
+┌────────────────────────────────────────────────────────────┐
+│                  npm update check failed                   │
+│            Try running with sudo or get access             │
+│            to the local update config store via            │
+│ sudo chown -R $USER:$(id -gn $USER) /home/jmendoza/.config │
+
+
+#################################### Install nodemon ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm i -D nodemon
+
+#################################### Install eslint ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm install eslint --save-dev
+
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ ./node_modules/.bin/eslint --init
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? CommonJS (require/exports)
+? Which framework does your project use? None of these
+? Does your project use TypeScript? No
+? Where does your code run? Node
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? Airbnb: https://github.com/airbnb/javascript
+? What format do you want your config file to be in? JSON
+Checking peerDependencies of eslint-config-airbnb-base@latest
+The config that you've selected requires the following dependencies:
+
+eslint-config-airbnb-base@latest eslint@^5.16.0 || ^6.8.0 eslint-plugin-import@^2.20.1
+? Would you like to install them now with npm? Yes
+Installing eslint-config-airbnb-base@latest, eslint@^5.16.0 || ^6.8.0, eslint-plugin-import@^2.20.1
+npm WARN intermediate-node-api@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ eslint-config-airbnb-base@14.1.0
++ eslint@6.8.0
++ eslint-plugin-import@2.20.2
+added 61 packages from 38 contributors, updated 1 package and audited 559 packages in 39.329s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+┌────────────────────────────────────────────────────────────┐
+│                  npm update check failed                   │
+│            Try running with sudo or get access             │
+│            to the local update config store via            │
+│ sudo chown -R $USER:$(id -gn $USER) /home/jmendoza/.config │
+└────────────────────────────────────────────────────────────┘
+Successfully created .eslintrc.json file in /home/jmendoza/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ 
 

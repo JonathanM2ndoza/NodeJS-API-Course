@@ -1,0 +1,22 @@
+{
+    "name": "intermediate-node-api",
+    "version": "1.0.0",
+    "description": "Intermediate nodeJS API",
+    "main": "src/app.js",
+    "scripts": {
+        "dev": "nodemon src/app.js"
+    },
+    "keywords": [
+        "node",
+        "API",
+        "RESTful"
+    ],
+    "author": "Jonathan S Mendoza",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-plugin-import": "^2.20.2",
+        "nodemon": "^2.0.3"
+    }
+}
