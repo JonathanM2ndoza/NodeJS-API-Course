@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 
 const { info, error } = require('./modules/log');
 const { usersRoutes } = require('./routes/v1/user.routes');
+const { productsRoutes } = require('./routes/v1/product.routes');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -34,3 +35,4 @@ app.use(bodyParser.json())
 
 // Routes
 app.use('/api/v1', usersRoutes);
+app.use('/api/v1', productsRoutes);

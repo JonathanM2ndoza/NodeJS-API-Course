@@ -1,7 +1,6 @@
-const User = require('../models/user.model');
-const Product = require('../models/product.model');
+const User = require('../../models/user.model');
 
-exports.createUser = async(req) => {
+exports.createUser = async(req, res) => {
     try {
 
         const { username, email, password, data } = req.body;
@@ -17,5 +16,4 @@ exports.createUser = async(req) => {
     } catch (error) {
         throw error;
     }
-
 };

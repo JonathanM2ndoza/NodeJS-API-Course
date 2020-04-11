@@ -1,8 +1,8 @@
 const dotenv = require('dotenv');
 
-const { info } = require('../../modules/log')
+const { info, error } = require('../../modules/log')
 const { generateHash } = require('../../modules/encrypt');
-const userService = require('../../services/user.services')
+const userService = require('../../services/v1/user.services')
 
 dotenv.config();
 
@@ -18,15 +18,16 @@ exports.createUser = async(req, res) => {
         const result = await userService.createUser(req);
         info(result);
 
-        res.send({ status: 'OK', message: 'User Created' });
-    } catch (error) {
-        if (error.code && error.code === 11000) {
+        res.send({ status: 'OK', message: result });
+    } catch (err) {
+        error(err);
+        if (err.code && err.code === 11000) {
             res
                 .status(400)
-                .send({ status: 'DUPLICATED_VALUES', message: error.keyValue });
+                .send({ status: 'DUPLICATED_VALUES', message: err.keyValue });
             return;
         }
-        res.status(500).send({ status: 'ERROR', message: error.message });
+        res.status(500).send({ status: 'ERROR', message: err.message });
     }
 
 };
