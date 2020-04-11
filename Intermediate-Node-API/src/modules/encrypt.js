@@ -8,6 +8,6 @@ exports.generateHash = async(password, sizeSalt) => {
 
         return hash
     } catch (err) {
-        throw new Error(err);
+        throw err;
     }
 };
