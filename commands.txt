@@ -188,3 +188,24 @@ found 0 vulnerabilities
 Successfully created .eslintrc.json file in /home/jmendoza/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ 
 
+#################################### Install bcrypt ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm i bcrypt@3.0.7
+
+
+
+
+
+
+#################################### Code Snippets ####################################
+    bcrypt.genSalt(10)
+        .then(
+            salt => {
+                bcrypt.hash(password, salt)
+                    .then(hash => {
+                        info(`Hash generated: ${hash}`)
+                        res.send({ status: 'OK', message: 'user created' });
+
+                    })
+                    .catch(err => error(err));
+            }
+        ).catch(err => error(err));
