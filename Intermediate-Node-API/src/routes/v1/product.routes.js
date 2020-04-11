@@ -1,0 +1,1 @@
+const productsRoutes = require('../../controllers/v1/product.controllers');

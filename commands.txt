@@ -193,9 +193,6 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-No
 
 
 
-
-
-
 #################################### Code Snippets ####################################
     bcrypt.genSalt(10)
         .then(
@@ -209,3 +206,6 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-No
                     .catch(err => error(err));
             }
         ).catch(err => error(err));
+
+
+        

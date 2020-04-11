@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 
 const { info, error } = require('./modules/log');
-const { usersRoutes } = require('./routes/v1/users.routes');
+const { usersRoutes } = require('./routes/v1/user.routes');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -15,8 +15,17 @@ dotenv.config();
 
 // BD
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => info('mongoDB, Atlas. Connected'))
+    .then(() => {
+        info('Mongo DB Atlas. Connected');
+        app.listen(port, () => {
+            info(`NodeJS API listining on port: ${port}`);
+        });
+    })
     .catch((err) => error(err));
+
+//mongoose.set('useNewUrlParser', true);
+//mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 
 // Middleware
 app.use(morgan('dev'));
@@ -25,7 +34,3 @@ app.use(bodyParser.json())
 
 // Routes
 app.use('/api/v1', usersRoutes);
-
-app.listen(port, () => {
-    info(`A NodeJS API is listining on port: ${port}`);
-});

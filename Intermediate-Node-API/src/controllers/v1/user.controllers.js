@@ -3,18 +3,28 @@ const dotenv = require('dotenv');
 const { info } = require('../../modules/log')
 const { generateHash } = require('../../modules/encrypt');
 
+const User = require('../../models/user.model');
+const Product = require('../../models/product.model');
+
 dotenv.config();
 
 exports.createUser = async(req, res) => {
     try {
 
+        info(`req.body: ${req.body}`)
         const { username, email, password, data } = req.body;
         const sizeSalt = Number(process.env.SIZE_SALT);
-        info(password);
         const hash = await generateHash(password, sizeSalt);
 
+        const user = new User();
+        user.username = username;
+        user.email = email;
+        user.password = hash;
+        user.data = data;
 
-        res.send({ status: 'OK', message: 'user created' });
+        await user.save();
+
+        res.send({ status: 'OK', message: 'User Created' });
     } catch (error) {
         if (error.code && error.code === 11000) {
             res
