@@ -2,27 +2,21 @@ const dotenv = require('dotenv');
 
 const { info } = require('../../modules/log')
 const { generateHash } = require('../../modules/encrypt');
-
-const User = require('../../models/user.model');
-const Product = require('../../models/product.model');
+const userService = require('../../services/user.services')
 
 dotenv.config();
 
 exports.createUser = async(req, res) => {
     try {
 
-        info(`req.body: ${req.body}`)
-        const { username, email, password, data } = req.body;
+        const password = req.body.password;
         const sizeSalt = Number(process.env.SIZE_SALT);
         const hash = await generateHash(password, sizeSalt);
 
-        const user = new User();
-        user.username = username;
-        user.email = email;
-        user.password = hash;
-        user.data = data;
+        req.body.password = hash;
 
-        await user.save();
+        const result = await userService.createUser(req);
+        info(result);
 
         res.send({ status: 'OK', message: 'User Created' });
     } catch (error) {
