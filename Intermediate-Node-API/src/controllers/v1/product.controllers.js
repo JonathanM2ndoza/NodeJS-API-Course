@@ -26,7 +26,7 @@ exports.getProducts = async(req, res) => {
 exports.getProductsByUser = async(req, res) => {
     try {
         const products = await productService.getProductsByUser(req);
-        res.send({ status: 'OK', message: products });
+        res.send({ status: 'OK', message: products.length === 0 ? 'User not found' : products });
     } catch (err) {
         error(err);
         res.status(500).send({ status: 'ERROR', message: err.message });
@@ -36,7 +36,7 @@ exports.getProductsByUser = async(req, res) => {
 exports.deleteProduct = async(req, res) => {
     try {
         const products = await productService.deleteProduct(req);
-        res.send({ status: 'OK', message: products === null ? 'Producto not found' : products });
+        res.send({ status: 'OK', message: products === null ? 'Product not found' : products });
     } catch (err) {
         error(err);
         res.status(500).send({ status: 'ERROR', message: err.message });

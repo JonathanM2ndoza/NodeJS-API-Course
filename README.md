@@ -31,7 +31,7 @@ Examples of API RESTful with Node JS and Mongo DB Atlas
 Creating server with express, Routes, Controller, Model, Middleware, Mongo DB Atlas, Mongoose
 
 ### Intermediate-Node-API
-Eslint and Prettier, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
+Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
 Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas
 
 

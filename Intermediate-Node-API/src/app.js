@@ -15,7 +15,12 @@ const port = process.env.PORT || 3000;
 dotenv.config();
 
 // BD
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true
+    })
     .then(() => {
         info('Mongo DB Atlas. Connected');
         app.listen(port, () => {
@@ -23,10 +28,6 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
         });
     })
     .catch((err) => error(err));
-
-//mongoose.set('useNewUrlParser', true);
-//mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
 
 // Middleware
 app.use(morgan('dev'));
