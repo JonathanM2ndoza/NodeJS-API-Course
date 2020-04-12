@@ -56,7 +56,7 @@ exports.updateUser = async(req, res) => {
 exports.getUser = async(req, res) => {
     try {
         const user = await userService.getUser(req);
-        res.send({ status: 'OK', message: user });
+        res.send({ status: 'OK', message: user === null ? 'User not found' : user });
     } catch (err) {
         error(err);
         res.status(500).send({ status: 'ERROR', message: err.message });
@@ -65,8 +65,8 @@ exports.getUser = async(req, res) => {
 
 exports.getUsers = async(req, res) => {
     try {
-        const user = await userService.getUsers();
-        res.send({ status: 'OK', message: user });
+        const users = await userService.getUsers();
+        res.send({ status: 'OK', message: users.length === 0 ? 'Users not found' : users });
     } catch (err) {
         error(err);
         res.status(500).send({ status: 'ERROR', message: err.message });
