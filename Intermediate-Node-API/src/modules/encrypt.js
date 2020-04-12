@@ -11,3 +11,13 @@ exports.generateHash = async(password, sizeSalt) => {
         throw err;
     }
 };
+
+exports.comparePassword = async(passwordReq, passwordDB) => {
+    try {
+
+        return await bcrypt.compare(passwordReq, passwordDB);
+
+    } catch (err) {
+        throw err;
+    }
+};

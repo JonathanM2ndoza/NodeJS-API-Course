@@ -64,3 +64,13 @@ exports.deleteUser = async(req, res) => {
         throw error;
     }
 };
+
+exports.getUserByOne = async(req, res) => {
+    try {
+
+        return await User.findOne(req);
+
+    } catch (error) {
+        throw error;
+    }
+};

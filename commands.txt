@@ -191,6 +191,8 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-No
 #################################### Install bcrypt ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm i bcrypt@3.0.7
 
+#################################### Install jsonwebtoken ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm install jsonwebtoken
 
 
 #################################### Code Snippets ####################################

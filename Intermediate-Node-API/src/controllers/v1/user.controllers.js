@@ -1,7 +1,8 @@
 const dotenv = require('dotenv');
+const jwt = require('jsonwebtoken');
 
 const { info, error } = require('../../modules/log')
-const { generateHash } = require('../../modules/encrypt');
+const { generateHash, comparePassword } = require('../../modules/encrypt');
 const userService = require('../../services/v1/user.services')
 
 dotenv.config();
@@ -79,6 +80,38 @@ exports.deleteUser = async(req, res) => {
         res.send({ status: 'OK', message: 'User deleted' });
     } catch (err) {
         error(err);
+        res.status(500).send({ status: 'ERROR', message: err.message });
+    }
+};
+
+exports.login = async(req, res) => {
+    try {
+        const { email, password } = req.body;
+
+        const user = await userService.getUserByOne({ email });
+        if (!user) {
+            return res.status(401).send({ status: 'ERROR', message: 'User not found' });
+        }
+
+        const validPassword = await comparePassword(password, user.password);
+        if (!validPassword) {
+            return res.status(403).send({ status: 'ERROR', message: 'Invalid password' });
+        }
+
+        const tokenExpire = Number(process.env.JWT_EXPIRE_MIN);
+        const token = jwt.sign({ userId: user._id, role: user.role },
+            process.env.JWT_SECRET, { expiresIn: tokenExpire }
+        );
+        res.send({
+            status: 'OK',
+            message: {
+                token,
+                tokenExpire
+            }
+        });
+
+    } catch (err) {
+        error(err)
         res.status(500).send({ status: 'ERROR', message: err.message });
     }
 };
