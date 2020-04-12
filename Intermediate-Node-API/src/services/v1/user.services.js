@@ -4,14 +4,15 @@ const Product = require('../../models/product.model');
 exports.createUser = async(req, res) => {
     try {
 
-        const { username, email, password, data } = req.body;
+        const { username, email, password, data, role } = req.body;
 
         const user = new User();
         user.username = username;
         user.email = email;
         user.password = password;
         user.data = data;
-
+        if (role)
+            user.role = role;
         return await user.save();
 
     } catch (error) {

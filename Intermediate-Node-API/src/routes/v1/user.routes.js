@@ -5,7 +5,7 @@ const { isAuth, isValidHostaname, isAdmin } = require('../../middlewares/securit
 
 const usersRoutes = express.Router();
 
-usersRoutes.post('/users', isValidHostaname, isAuth, createUser);
+usersRoutes.post('/users', isValidHostaname, createUser);
 usersRoutes.put('/users/:userId', isAuth, isAdmin, updateUser);
 usersRoutes.get('/users/:userId', isAuth, getUser);
 usersRoutes.get('/users', isAuth, getUsers);

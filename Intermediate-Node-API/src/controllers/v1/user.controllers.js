@@ -22,7 +22,8 @@ exports.createUser = async(req, res) => {
             userId: result._id,
             username: result.username,
             email: result.email,
-            data: result.data
+            data: result.data,
+            role: result.role
         }
 
         res.send({ status: 'OK', message: data });
