@@ -18,21 +18,19 @@ exports.isAuth = (req, res, next) => {
     try {
         const { token } = req.headers;
         if (!token) {
-            res
-                .status(403)
-                .send({ status: 'ERROR', message: 'Missing header token' });
-            return;
+            throw {
+                code: 403,
+                message: 'Missing header token'
+            };
         }
 
         const data = jwt.verify(token, process.env.JWT_SECRET);
-        info('jwt data', data);
         req.sessionData = { userId: data.userId, role: data.role };
         next();
-
     } catch (err) {
         error(err);
         res
-            .status(500)
+            .status(err.code || 500)
             .send({ status: 'ERROR', message: err.message });
     }
 };
@@ -40,18 +38,17 @@ exports.isAuth = (req, res, next) => {
 exports.isAdmin = (req, res, next) => {
     try {
         const { role } = req.sessionData;
-        console.log('isAdmin', role);
         if (role !== 'admin') {
             throw {
                 code: 403,
-                status: 'ACCESS_DENIED',
-                message: 'invalid role'
+                message: 'Invalid role'
             };
         }
         next();
-    } catch (e) {
+    } catch (err) {
+        error(err);
         res
-            .status(e.code || 500)
-            .send({ status: e.status || 'ERROR', message: e.message });
+            .status(err.code || 500)
+            .send({ status: 'ERROR', message: err.message });
     }
 };

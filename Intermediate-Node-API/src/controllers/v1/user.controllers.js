@@ -41,7 +41,8 @@ exports.createUser = async(req, res) => {
 exports.updateUser = async(req, res) => {
     try {
         const user = await userService.updateUser(req);
-        res.send({ status: 'OK', message: 'User updated' });
+        info(user);
+        res.send({ status: 'OK', message: user === null ? 'User not found' : 'User updated' });
     } catch (err) {
         error(err);
         if (err.code && err.code === 11000) {
@@ -98,7 +99,7 @@ exports.login = async(req, res) => {
             return res.status(403).send({ status: 'ERROR', message: 'Invalid password' });
         }
 
-        const tokenExpire = Number(process.env.JWT_EXPIRE_MIN);
+        const tokenExpire = Number(process.env.JWT_EXPIRE_SECONDS);
         const token = jwt.sign({ userId: user._id, role: user.role },
             process.env.JWT_SECRET, { expiresIn: tokenExpire }
         );
