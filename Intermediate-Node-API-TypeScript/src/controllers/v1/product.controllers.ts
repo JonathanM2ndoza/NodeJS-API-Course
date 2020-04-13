@@ -1,0 +1,72 @@
+import { Request, Response } from 'express';
+
+import { info, error } from '../../modules/log';
+import {
+  createProduct,
+  getProducts,
+  getProductsByUser,
+  deleteProduct,
+} from '../../services/v1/product.services';
+
+export const createProductC = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const result = await createProduct(req, res);
+    info(result);
+
+    res.send({ status: 'OK', message: result });
+  } catch (err) {
+    error(err);
+    res.status(500).send({ status: 'ERROR', message: err.message });
+  }
+};
+
+export const getProductsC = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const products = await getProducts(req, res);
+    res.send({
+      status: 'OK',
+      message: products === null ? 'Products not found' : products,
+    });
+  } catch (err) {
+    error(err);
+    res.status(500).send({ status: 'ERROR', message: err.message });
+  }
+};
+
+export const getProductsByUserC = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const products = await getProductsByUser(req, res);
+    res.send({
+      status: 'OK',
+      message: products === null ? 'User not found' : products,
+    });
+  } catch (err) {
+    error(err);
+    res.status(500).send({ status: 'ERROR', message: err.message });
+  }
+};
+
+export const deleteProductC = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const products = await deleteProduct(req, res);
+    res.send({
+      status: 'OK',
+      message: products === null ? 'Product not found' : products,
+    });
+  } catch (err) {
+    error(err);
+    res.status(500).send({ status: 'ERROR', message: err.message });
+  }
+};
