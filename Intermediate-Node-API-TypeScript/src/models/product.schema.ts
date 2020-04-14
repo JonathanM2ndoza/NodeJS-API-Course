@@ -1,7 +1,7 @@
 import mongoose, { model, Schema } from 'mongoose';
 import { Product } from './product.model';
 
-const ProductSchema: Schema = new mongoose.Schema(
+const ProductSchema: Schema = new Schema(
   {
     title: {
       type: String,

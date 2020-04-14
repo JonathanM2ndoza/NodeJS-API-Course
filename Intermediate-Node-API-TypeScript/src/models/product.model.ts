@@ -6,5 +6,5 @@ export interface Product extends Document {
   desc: string;
   price: number;
   images: Array<string>;
-  user: User | string;
+  user: User | User['_id'];
 }

@@ -17,7 +17,7 @@ export const createUser = async (
     user.password = password;
     user.data = data;
     if (role) user.role = role;
-    return await UserSchema.save();
+    return await user.save();
   } catch (error) {
     throw error;
   }
