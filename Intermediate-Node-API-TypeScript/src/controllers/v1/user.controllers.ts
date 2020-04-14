@@ -75,6 +75,7 @@ export const updateUserC = async (
 export const getUserC = async (req: Request, res: Response): Promise<void> => {
   try {
     const user = await getUser(req, res);
+    info(user);
     res.send({
       status: 'OK',
       message: user === null ? 'User not found' : user,
@@ -104,7 +105,8 @@ export const deleteUserC = async (
   res: Response
 ): Promise<void> => {
   try {
-    await deleteUser(req, res);
+    const result = await deleteUser(req, res);
+    info(result);
     res.send({ status: 'OK', message: 'User deleted' });
   } catch (err) {
     error(err);
