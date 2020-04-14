@@ -16,7 +16,10 @@ export const createProductC = async (
     const result = await createProduct(req, res);
     info(result);
 
-    res.send({ status: 'OK', message: result });
+    res.send({
+      status: 'OK',
+      message: result === null ? 'Product not created, user not found' : result,
+    });
   } catch (err) {
     error(err);
     res.status(500).send({ status: 'ERROR', message: err.message });

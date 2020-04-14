@@ -1,17 +1,33 @@
 import { Request, Response } from 'express';
 import ProductSchema from '../../models/product.schema';
 import { Product } from '../../models/product.model';
+import { getUser } from '../../services/v1/user.services';
 
 export const createProduct = async (
   req: Request,
   res: Response
 ): Promise<Product> => {
-  try {
-    const product = new ProductSchema(req.body);
-    return await product.save();
-  } catch (error) {
-    throw error;
-  }
+  const product = new ProductSchema(req.body);
+  req.params.userId = req.body.user;
+
+  return await getUser(req, res)
+    .then((data: any) => {
+      if (data === null) {
+        return data;
+      } else {
+        return product
+          .save()
+          .then((data: Product) => {
+            return data;
+          })
+          .catch((error: Error) => {
+            throw error;
+          });
+      }
+    })
+    .catch((error: Error) => {
+      throw error;
+    });
 };
 
 export const getProducts = async (
