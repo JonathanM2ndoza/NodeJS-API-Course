@@ -34,7 +34,10 @@ export const getProductsC = async (
     const products = await getProducts(req, res);
     res.send({
       status: 'OK',
-      message: products === null ? 'Products not found' : products,
+      message:
+        Array.isArray(products) && products.length
+          ? products
+          : 'Products not found',
     });
   } catch (err) {
     error(err);
@@ -50,7 +53,10 @@ export const getProductsByUserC = async (
     const products = await getProductsByUser(req, res);
     res.send({
       status: 'OK',
-      message: products === null ? 'User not found' : products,
+      message:
+        Array.isArray(products) && products.length
+          ? products
+          : 'Products not found',
     });
   } catch (err) {
     error(err);

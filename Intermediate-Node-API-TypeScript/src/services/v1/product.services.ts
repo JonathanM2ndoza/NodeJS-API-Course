@@ -33,43 +33,42 @@ export const createProduct = async (
 export const getProducts = async (
   req: Request,
   res: Response
-): Promise<Product> => {
-  try {
-    const products: any = await ProductSchema.find(/*{ price: { $gt: 2.000 } }*/)
-      .select('title desc price')
-      .populate('user', 'username email data role');
-
-    return products;
-  } catch (error) {
-    throw error;
-  }
+): Promise<Product[]> => {
+  return await ProductSchema.find(/*{ price: { $gt: 2.000 } }*/)
+    .select('title desc price')
+    .populate('user', 'username email data role')
+    .then((data: Product[]) => {
+      return data;
+    })
+    .catch((error: Error) => {
+      throw error;
+    });
 };
 
 export const getProductsByUser = async (
   req: Request,
   res: Response
-): Promise<Product> => {
-  try {
-    const products: any = await ProductSchema.find({
-      user: req.params.userId,
+): Promise<Product[]> => {
+  return await ProductSchema.find({
+    user: req.params.userId,
+  })
+    .then((data: Product[]) => {
+      return data;
+    })
+    .catch((error: Error) => {
+      throw error;
     });
-
-    return products;
-  } catch (error) {
-    throw error;
-  }
 };
 
 export const deleteProduct = async (
   req: Request,
   res: Response
-): Promise<Product> => {
-  try {
-    const products: any = await ProductSchema.findByIdAndDelete(
-      req.params.productId
-    );
-    return products;
-  } catch (error) {
-    throw error;
-  }
+): Promise<any> => {
+  return await ProductSchema.findByIdAndDelete(req.params.productId)
+    .then((data: any) => {
+      return data;
+    })
+    .catch((error: Error) => {
+      throw error;
+    });
 };

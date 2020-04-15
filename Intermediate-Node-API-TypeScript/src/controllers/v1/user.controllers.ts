@@ -92,7 +92,7 @@ export const getUsersC = async (req: Request, res: Response): Promise<void> => {
     info(users);
     res.send({
       status: 'OK',
-      message: users.length === 0 ? 'Users not found' : users,
+      message: Array.isArray(users) && users.length ? users : 'Users not found',
     });
   } catch (err) {
     error(err);
@@ -107,7 +107,10 @@ export const deleteUserC = async (
   try {
     const result = await deleteUser(req, res);
     info(result);
-    res.send({ status: 'OK', message: 'User deleted' });
+    res.send({
+      status: 'OK',
+      message: result === null ? 'User not found' : 'User deleted',
+    });
   } catch (err) {
     error(err);
     res.status(500).send({ status: 'ERROR', message: err.message });

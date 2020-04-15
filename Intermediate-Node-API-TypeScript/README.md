@@ -4,7 +4,7 @@ Example of an basic API RESTful with Node JS and Mongo DB Atlas.
 Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
 Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Token (JWT).
 
-Migrating To Typescript, Promises, Pretty code.
+Migrating To TypeScript, Promises, Pretty code.
 
 ### MongoDB Atlas
 
