@@ -34,4 +34,9 @@ Creating server with express, Routes, Controller, Model, Middleware, Mongo DB At
 Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
 Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Token (JWT) 
 
+### Intermediate-Node-API-TypeScript
+Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
+Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Token (JWT).
+
+Migrating To TypeScript, Promises, Pretty code.
 
