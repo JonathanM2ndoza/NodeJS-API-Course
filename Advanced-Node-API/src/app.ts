@@ -7,9 +7,10 @@ import bodyParser from 'body-parser';
 import { info, error } from './modules/log';
 import { usersRoutes } from './routes/v1/user.routes';
 import { productsRoutes } from './routes/v1/product.routes';
+import { environment } from './config';
 
 const app: Application = express();
-const port: number = Number(process.env.PORT) || 3000;
+const port: number = environment.port;
 
 // ENV
 dotenv.config();
