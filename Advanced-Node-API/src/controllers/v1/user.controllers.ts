@@ -24,7 +24,7 @@ export const createUserC = async (
 
     req.body.password = hash;
 
-    const result = await createUser(req, res);
+    const result = await createUser(req);
     info(result);
     const data = {
       userId: result._id,
@@ -52,7 +52,7 @@ export const updateUserC = async (
   res: Response
 ): Promise<void> => {
   try {
-    const user = await updateUser(req, res);
+    const user = await updateUser(req);
     info(user);
     res.send({
       status: 'OK',
@@ -72,7 +72,7 @@ export const updateUserC = async (
 
 export const getUserC = async (req: Request, res: Response): Promise<void> => {
   try {
-    const user = await getUser(req, res);
+    const user = await getUser(req);
     info(user);
     res.send({
       status: 'OK',
@@ -103,7 +103,7 @@ export const deleteUserC = async (
   res: Response
 ): Promise<void> => {
   try {
-    const result = await deleteUser(req, res);
+    const result = await deleteUser(req);
     info(result);
     res.send({
       status: 'OK',

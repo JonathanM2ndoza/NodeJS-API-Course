@@ -13,7 +13,7 @@ export const createProductC = async (
   res: Response
 ): Promise<void> => {
   try {
-    const result = await createProduct(req, res);
+    const result = await createProduct(req);
     info(result);
 
     res.send({
@@ -31,7 +31,7 @@ export const getProductsC = async (
   res: Response
 ): Promise<void> => {
   try {
-    const products = await getProducts(req, res);
+    const products = await getProducts();
     res.send({
       status: 'OK',
       message:
@@ -50,7 +50,7 @@ export const getProductsByUserC = async (
   res: Response
 ): Promise<void> => {
   try {
-    const products = await getProductsByUser(req, res);
+    const products = await getProductsByUser(req);
     res.send({
       status: 'OK',
       message:
@@ -69,7 +69,7 @@ export const deleteProductC = async (
   res: Response
 ): Promise<void> => {
   try {
-    const products = await deleteProduct(req, res);
+    const products = await deleteProduct(req);
     res.send({
       status: 'OK',
       message: products === null ? 'Product not found' : products,

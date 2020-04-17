@@ -1,13 +1,10 @@
-import { Request, Response } from 'express';
+import { Request } from 'express';
 
 import { User } from '../../models/user.model';
 import UserSchema from '../../models/user.schema';
 import ProductSchema from '../../models/product.schema';
 
-export const createUser = async (
-  req: Request,
-  res: Response
-): Promise<User> => {
+export const createUser = async (req: Request): Promise<User> => {
   const { username, email, password, data, role } = req.body;
 
   const user = new UserSchema();
@@ -27,7 +24,7 @@ export const createUser = async (
     });
 };
 
-export const updateUser = async (req: Request, res: Response): Promise<any> => {
+export const updateUser = async (req: Request): Promise<any> => {
   const { username, email, data } = req.body;
   return await UserSchema.findByIdAndUpdate(req.params.userId, {
     username,
@@ -42,18 +39,17 @@ export const updateUser = async (req: Request, res: Response): Promise<any> => {
     });
 };
 
-export const getUser = async (req: Request, res: Response): Promise<any> => {
-  return await UserSchema.findById(req.params.userId)
+export const getUser = async (req: Request): Promise<any> =>
+  await UserSchema.findById(req.params.userId)
     .then((data: any) => {
       return data;
     })
     .catch((error: Error) => {
       throw error;
     });
-};
 
-export const getUsers = async (): Promise<any> => {
-  return await UserSchema.find()
+export const getUsers = async (): Promise<any> =>
+  await UserSchema.find()
     .select({ password: 0, __v: 0, role: 0 })
     .then((data: any) => {
       return data;
@@ -61,9 +57,8 @@ export const getUsers = async (): Promise<any> => {
     .catch((error: Error) => {
       throw error;
     });
-};
 
-export const deleteUser = async (req: Request, res: Response): Promise<any> => {
+export const deleteUser = async (req: Request): Promise<any> => {
   try {
     return await UserSchema.findByIdAndDelete(req.params.userId)
       .then(async () => {
@@ -83,12 +78,11 @@ export const deleteUser = async (req: Request, res: Response): Promise<any> => {
   }
 };
 
-export const getUserByOne = async (item: any): Promise<any> => {
-  return await UserSchema.findOne(item)
+export const getUserByOne = async (item: any): Promise<any> =>
+  await UserSchema.findOne(item)
     .then((data: any) => {
       return data;
     })
     .catch((error: Error) => {
       throw error;
     });
-};

@@ -3,14 +3,11 @@ import ProductSchema from '../../models/product.schema';
 import { Product } from '../../models/product.model';
 import { getUser } from '../../services/v1/user.services';
 
-export const createProduct = async (
-  req: Request,
-  res: Response
-): Promise<Product> => {
+export const createProduct = async (req: Request): Promise<Product> => {
   const product = new ProductSchema(req.body);
   req.params.userId = req.body.user;
 
-  return await getUser(req, res)
+  return await getUser(req)
     .then((data: any) => {
       if (data === null) {
         return data;
@@ -30,11 +27,8 @@ export const createProduct = async (
     });
 };
 
-export const getProducts = async (
-  req: Request,
-  res: Response
-): Promise<Product[]> => {
-  return await ProductSchema.find(/*{ price: { $gt: 2.000 } }*/)
+export const getProducts = async (): Promise<Product[]> =>
+  await ProductSchema.find(/*{ price: { $gt: 2.000 } }*/)
     .select('title desc price')
     .populate('user', 'username email data role')
     .then((data: Product[]) => {
@@ -43,13 +37,9 @@ export const getProducts = async (
     .catch((error: Error) => {
       throw error;
     });
-};
 
-export const getProductsByUser = async (
-  req: Request,
-  res: Response
-): Promise<Product[]> => {
-  return await ProductSchema.find({
+export const getProductsByUser = async (req: Request): Promise<Product[]> =>
+  await ProductSchema.find({
     user: req.params.userId,
   })
     .then((data: Product[]) => {
@@ -58,17 +48,12 @@ export const getProductsByUser = async (
     .catch((error: Error) => {
       throw error;
     });
-};
 
-export const deleteProduct = async (
-  req: Request,
-  res: Response
-): Promise<any> => {
-  return await ProductSchema.findByIdAndDelete(req.params.productId)
+export const deleteProduct = async (req: Request): Promise<any> =>
+  await ProductSchema.findByIdAndDelete(req.params.productId)
     .then((data: any) => {
       return data;
     })
     .catch((error: Error) => {
       throw error;
     });
-};
