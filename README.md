@@ -41,6 +41,4 @@ Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Tok
 Migrating To TypeScript, Promises, Pretty code.
 
 ### Advanced-Node-API
-Template for project structure with NodeJS (RESTful API), Mongo DB Atlas, JSON Web Token (JWT), TypeScript.
-
-Environment variables for development and production.
+Template for project structure with NodeJS (RESTful API), Mongo DB Atlas, JSON Web Token (JWT), TypeScript. Handle errors. Environment variables for development and production. Logging library. Best Practices for Node.js Development.
