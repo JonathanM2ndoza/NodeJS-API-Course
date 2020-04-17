@@ -4,7 +4,6 @@ import { Request, Response, NextFunction } from 'express';
 import { error } from '../modules/log';
 import { environment } from '../config/environment';
 
-
 export const isValidHostaname = (
   req: Request,
   res: Response,

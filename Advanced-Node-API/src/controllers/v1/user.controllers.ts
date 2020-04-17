@@ -136,7 +136,7 @@ export const login = async (req: Request, res: Response): Promise<any> => {
     const tokenExpire = environment.jwtExpireSeconds;
     const token = jwt.sign(
       { userId: user._id, role: user.role },
-      process.env.JWT_SECRET!,
+      environment.jwtSecret,
       { expiresIn: tokenExpire }
     );
     res.send({
