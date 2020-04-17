@@ -1,9 +1,9 @@
-import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 import { Request, Response } from 'express';
 
 import { info, error } from '../../modules/log';
 import { generateHash, comparePassword } from '../../modules/encrypt';
+import { environment } from '../../config/environment';
 import {
   createUser,
   updateUser,
@@ -13,15 +13,13 @@ import {
   getUserByOne,
 } from '../../services/v1/user.services';
 
-dotenv.config();
-
 export const createUserC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
   try {
     const password = req.body.password;
-    const sizeSalt = Number(process.env.SIZE_SALT);
+    const sizeSalt = environment.sizeSalt;
     const hash = await generateHash(password, sizeSalt);
 
     req.body.password = hash;
@@ -135,7 +133,7 @@ export const login = async (req: Request, res: Response): Promise<any> => {
         .send({ status: 'ERROR', message: 'Invalid password' });
     }
 
-    const tokenExpire = Number(process.env.JWT_EXPIRE_SECONDS);
+    const tokenExpire = environment.jwtExpireSeconds;
     const token = jwt.sign(
       { userId: user._id, role: user.role },
       process.env.JWT_SECRET!,

@@ -20,11 +20,9 @@ declare global {
 
 // BD
 mongo(app, environment.mongoURI, port);
-
 // Middleware
 app.use(morgan(environment.morganFormat));
-// parse application/json
+// Parse application/json
 app.use(bodyParser.json());
-
 // Routes
 routes(app);

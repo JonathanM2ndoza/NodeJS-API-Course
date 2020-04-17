@@ -1,17 +1,16 @@
 import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
 import { Request, Response, NextFunction } from 'express';
 
-import { info, error } from '../modules/log';
+import { error } from '../modules/log';
+import { environment } from '../config/environment';
 
-dotenv.config();
 
 export const isValidHostaname = (
   req: Request,
   res: Response,
   next: NextFunction
 ): void => {
-  const validHosts = process.env.VALID_HOSTS!.split(',');
+  const validHosts = environment.validHosts.split(',');
   if (validHosts.includes(req.hostname)) {
     next();
   } else {
@@ -33,7 +32,7 @@ export const isAuth = (
       };
     }
 
-    const data: any = jwt.verify(token as string, process.env.JWT_SECRET!);
+    const data: any = jwt.verify(token as string, environment.jwtSecret);
     req.sessionData = { userId: data.userId, role: data.role };
     next();
   } catch (err) {
