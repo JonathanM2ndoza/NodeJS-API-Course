@@ -195,20 +195,6 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-No
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-Node-API$ npm install jsonwebtoken
 
 
-#################################### Code Snippets ####################################
-    bcrypt.genSalt(10)
-        .then(
-            salt => {
-                bcrypt.hash(password, salt)
-                    .then(hash => {
-                        info(`Hash generated: ${hash}`)
-                        res.send({ status: 'OK', message: 'user created' });
-
-                    })
-                    .catch(err => error(err));
-            }
-        ).catch(err => error(err));
 
 
 
-#################################### Advanced-Node-API ####################################

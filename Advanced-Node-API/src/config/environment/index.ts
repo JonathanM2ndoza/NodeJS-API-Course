@@ -1,5 +1,5 @@
-import { Development } from './development';
-import { Production } from './production';
+import { Development } from '../environment/development';
+import { Production } from '../environment/production';
 
 let environment: Development | Production;
 
