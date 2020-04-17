@@ -3,8 +3,8 @@ import bcrypt from 'bcrypt';
 export const generateHash = async (
   password: string,
   sizeSalt: number
-): Promise<string> => {
-  return await bcrypt
+): Promise<string> =>
+  await bcrypt
     .genSalt(sizeSalt)
     .then(async (salt: string) => {
       return await bcrypt
@@ -19,13 +19,12 @@ export const generateHash = async (
     .catch((error: Error) => {
       throw error;
     });
-};
 
 export const comparePassword = async (
   passwordReq: string,
   passwordDB: string
-): Promise<boolean> => {
-  return await bcrypt
+): Promise<boolean> =>
+  await bcrypt
     .compare(passwordReq, passwordDB)
     .then((data: boolean) => {
       return data;
@@ -33,4 +32,3 @@ export const comparePassword = async (
     .catch((error: Error) => {
       throw error;
     });
-};
