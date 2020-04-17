@@ -58,29 +58,24 @@ export const getUsers = async (): Promise<any> =>
       throw error;
     });
 
-export const deleteUser = async (req: Request): Promise<any> => {
-  try {
-    return await UserSchema.findByIdAndDelete(req.params.userId)
-      .then(async (data: any) => {
-        if (data === null) {
-          return data;
-        } else {
-          return await ProductSchema.deleteMany({ user: req.params.userId })
-            .then((data: any) => {
-              return data;
-            })
-            .catch((error: Error) => {
-              throw error;
-            });
-        }
-      })
-      .catch((error: Error) => {
-        throw error;
-      });
-  } catch (error) {
-    throw error;
-  }
-};
+export const deleteUser = async (req: Request): Promise<any> =>
+  await UserSchema.findByIdAndDelete(req.params.userId)
+    .then(async (data: any) => {
+      if (data === null) {
+        return data;
+      } else {
+        return await ProductSchema.deleteMany({ user: req.params.userId })
+          .then((data: any) => {
+            return data;
+          })
+          .catch((error: Error) => {
+            throw error;
+          });
+      }
+    })
+    .catch((error: Error) => {
+      throw error;
+    });
 
 export const getUserByOne = async (item: any): Promise<any> =>
   await UserSchema.findOne(item)
