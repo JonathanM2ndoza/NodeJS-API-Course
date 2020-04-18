@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 
 import { info, error } from '../../modules/log';
+import { responseError } from '../../config/response/server.error';
 import {
   createProduct,
   getProducts,
@@ -12,70 +13,69 @@ export const createProductC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  try {
-    const result = await createProduct(req);
-    info(result);
-
-    res.send({
-      status: 'OK',
-      message: result === null ? 'Product not created, user not found' : result,
+  await createProduct(req)
+    .then((data: any) => {
+      info(data);
+      res.json({
+        status: 'OK',
+        message: data === null ? 'Product not created, user not found' : data,
+      });
+    })
+    .catch((err) => {
+      error(err);
+      responseError(res, err.message, 'ERROR', 500);
     });
-  } catch (err) {
-    error(err);
-    res.status(500).send({ status: 'ERROR', message: err.message });
-  }
 };
 
 export const getProductsC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  try {
-    const products = await getProducts();
-    res.send({
-      status: 'OK',
-      message:
-        Array.isArray(products) && products.length
-          ? products
-          : 'Products not found',
+  await getProducts()
+    .then((data: any) => {
+      res.send({
+        status: 'OK',
+        message:
+          Array.isArray(data) && data.length ? data : 'Products not found',
+      });
+    })
+    .catch((err) => {
+      error(err);
+      responseError(res, err.message, 'ERROR', 500);
     });
-  } catch (err) {
-    error(err);
-    res.status(500).send({ status: 'ERROR', message: err.message });
-  }
 };
 
 export const getProductsByUserC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  try {
-    const products = await getProductsByUser(req);
-    res.send({
-      status: 'OK',
-      message:
-        Array.isArray(products) && products.length
-          ? products
-          : 'Products not found',
+  await getProductsByUser(req)
+    .then((data: any) => {
+      res.send({
+        status: 'OK',
+        message:
+          Array.isArray(data) && data.length ? data : 'Products not found',
+      });
+    })
+    .catch((err) => {
+      error(err);
+      responseError(res, err.message, 'ERROR', 500);
     });
-  } catch (err) {
-    error(err);
-    res.status(500).send({ status: 'ERROR', message: err.message });
-  }
 };
 
 export const deleteProductC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  try {
-    const products = await deleteProduct(req);
-    res.send({
-      status: 'OK',
-      message: products === null ? 'Product not found' : products,
+  await deleteProduct(req)
+    .then((data: any) => {
+      res.send({
+        status: 'OK',
+        message: data === null ? 'Product not found' : data,
+      });
+    })
+    .catch((err) => {
+      error(err);
+      responseError(res, err.message, 'ERROR', 500);
     });
-  } catch (err) {
-    error(err);
-    res.status(500).send({ status: 'ERROR', message: err.message });
-  }
 };

@@ -25,12 +25,10 @@ export const createUser = async (req: Request): Promise<User> => {
 };
 
 export const updateUser = async (req: Request): Promise<any> => {
-  const { username, email, data } = req.body;
-  return await UserSchema.findByIdAndUpdate(req.params.userId, {
-    username,
-    email,
-    data,
-  })
+  let params: any = {};
+  for (let prop in req.body) if (req.body[prop]) params[prop] = req.body[prop];
+
+  return await UserSchema.findByIdAndUpdate(req.params.userId, params)
     .then((data: any) => {
       return data;
     })
