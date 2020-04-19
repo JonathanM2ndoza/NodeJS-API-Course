@@ -9,14 +9,12 @@ export class WinstonLogger {
   logger: Logger;
   fileName: string;
   date: string;
-  message: string;
 
   constructor(route: string) {
     this.route = route;
     this.env = environment.nodeEnv;
     this.date = dateFormat(new Date(), 'yyyy-mm-dd');
     this.fileName = `app-` + this.date + '.log';
-    this.message = '';
     this.logger = this.createLogger();
   }
 
@@ -44,7 +42,6 @@ export class WinstonLogger {
         }),
       ],
     });
-    console.log(environment.loggingPath + this.fileName);
     return logger;
   };
 
@@ -56,7 +53,7 @@ export class WinstonLogger {
         this.logger.log('info', message);
       }
     } catch (err) {
-      console.error(err);
+      throw err;
     }
   };
 
@@ -68,7 +65,7 @@ export class WinstonLogger {
         this.logger.log('debug', message);
       }
     } catch (err) {
-      console.error(err);
+      throw err;
     }
   };
 
@@ -80,7 +77,7 @@ export class WinstonLogger {
         this.logger.log('warn', message);
       }
     } catch (err) {
-      console.error(err);
+      throw err;
     }
   };
 
@@ -92,7 +89,7 @@ export class WinstonLogger {
         this.logger.log('error', message);
       }
     } catch (err) {
-      console.error(err);
+      throw err;
     }
   };
 }

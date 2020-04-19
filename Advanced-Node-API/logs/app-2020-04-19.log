@@ -1,0 +1,75 @@
+[2020-04-19 00:06:34] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 00:06:34] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 00:06:34] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 00:07:03] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-19 00:15:43] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 00:15:43] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 00:15:43] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 00:16:08] [error] [user.controllers.ts] [data and hash arguments required]
+[2020-04-19 00:16:31] [error] [security.ts] [jwt expired]
+[2020-04-19 00:16:40] [debug] [user.controllers.ts] [user]
+[2020-04-19 00:16:56] [debug] [user.controllers.ts] [user] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+}]
+[2020-04-19 00:17:19] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 00:17:19] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 00:17:19] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 00:17:21] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+}]
+[2020-04-19 00:17:32] [debug] [user.controllers.ts] [user] [{
+  role: 'admin',
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  password: '$2b$15$/QBNuCHUXZ7LXF.oP4khvuCArykiuRZe3Vmk1o7rBz830HRAh5SXG',
+  data: { age: 20, isMale: true },
+  __v: 0
+}]
+[2020-04-19 00:17:44] [error] [user.controllers.ts] [Cast to ObjectId failed for value "5e9a6fd2211b6e11ab87b8d21" at path "_id" for model "User"]
+[2020-04-19 00:17:47] [error] [user.controllers.ts] [Cast to ObjectId failed for value "5e9a6fd2211b6e11ab87b8d21" at path "_id" for model "User"]
+[2020-04-19 00:17:56] [debug] [product.controllers.ts] [data] []
+[2020-04-19 00:18:25] [debug] [product.controllers.ts] [data] [{
+  images: [
+    'https://www.youtube.com/watch?v=OijrlItssOc',
+    'https://www.youtube.com/watch?v=OijrlItssOc'
+  ],
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: 5e9a6fd2211b6e11ab87b8d2,
+  createdAt: 2020-04-18T03:30:28.614Z,
+  updatedAt: 2020-04-18T03:30:28.614Z,
+  __v: 0
+},{
+  images: [
+    'https://www.youtube.com/watch?v=OijrlItssOc',
+    'https://www.youtube.com/watch?v=OijrlItssOc'
+  ],
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: 5e9a6fd2211b6e11ab87b8d2,
+  createdAt: 2020-04-18T03:31:28.499Z,
+  updatedAt: 2020-04-18T03:31:28.499Z,
+  __v: 0
+}]
+[2020-04-19 00:18:37] [info] [mongo.ts] [Mongoose default connection is disconnected]

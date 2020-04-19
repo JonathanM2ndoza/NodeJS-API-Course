@@ -26,7 +26,7 @@ export const createUserC = async (
     .then(async (hash: any) => {
       req.body.password = hash;
       const result = await createUser(req);
-      logger.debug(result);
+      logger.debug('result', result);
       const data = {
         userId: result._id,
         username: result.username,
@@ -52,7 +52,7 @@ export const updateUserC = async (
 ): Promise<void> => {
   await updateUser(req)
     .then((user: any) => {
-      logger.debug(user);
+      logger.debug('user', user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : 'User updated',
@@ -67,7 +67,7 @@ export const updateUserC = async (
 export const getUserC = async (req: Request, res: Response): Promise<void> => {
   await getUser(req)
     .then((user: any) => {
-      logger.debug(user);
+      logger.debug('user', user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : user,
@@ -82,7 +82,7 @@ export const getUserC = async (req: Request, res: Response): Promise<void> => {
 export const getUsersC = async (req: Request, res: Response): Promise<void> => {
   await getUsers()
     .then((users: any) => {
-      logger.debug(users);
+      logger.debug('users', users);
       res.send({
         status: 'OK',
         message:
@@ -101,7 +101,7 @@ export const deleteUserC = async (
 ): Promise<void> => {
   await deleteUser(req)
     .then((user: any) => {
-      logger.debug(user);
+      logger.debug('user', user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : 'User deleted',

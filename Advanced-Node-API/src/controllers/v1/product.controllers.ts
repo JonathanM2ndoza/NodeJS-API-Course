@@ -17,7 +17,7 @@ export const createProductC = async (
 ): Promise<void> => {
   await createProduct(req)
     .then((data: any) => {
-      logger.debug(data);
+      logger.debug('data', data);
       res.json({
         status: 'OK',
         message: data === null ? 'Product not created, user not found' : data,
@@ -35,7 +35,7 @@ export const getProductsC = async (
 ): Promise<void> => {
   await getProducts()
     .then((data: any) => {
-      logger.debug('data: ',data);
+      logger.debug('data', data);
       res.send({
         status: 'OK',
         message:
@@ -54,6 +54,7 @@ export const getProductsByUserC = async (
 ): Promise<void> => {
   await getProductsByUser(req)
     .then((data: any) => {
+      logger.debug('data', data);
       res.send({
         status: 'OK',
         message:
