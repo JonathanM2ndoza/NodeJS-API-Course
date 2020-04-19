@@ -9,4 +9,5 @@ export class Development {
   jwtExpireSeconds: number = Number(process.env.JWT_EXPIRE_SECONDS) || 360;
   validHosts: string = process.env.VALID_HOSTS || 'test.com,localhost';
   morganFormat: string = process.env.MORGAN_FORMAT || 'dev';
+  loggingPath: string = process.env.LOGGING_PATH || 'logs/';
 }

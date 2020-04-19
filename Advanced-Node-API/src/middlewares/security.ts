@@ -1,8 +1,10 @@
 import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 
-import { error } from '../modules/log';
+import { WinstonLogger } from '../modules/logger';
 import { environment } from '../config/environment';
+
+const logger = new WinstonLogger('security.ts');
 
 export const isValidHostaname = (
   req: Request,
@@ -35,7 +37,7 @@ export const isAuth = (
     req.sessionData = { userId: data.userId, role: data.role };
     next();
   } catch (err) {
-    error(err);
+    logger.error(err);
     res.status(err.code || 500).send({ status: 'ERROR', message: err.message });
   }
 };
@@ -55,7 +57,7 @@ export const isAdmin = (
     }
     next();
   } catch (err) {
-    error(err);
+    logger.error(err);
     res.status(err.code || 500).send({ status: 'ERROR', message: err.message });
   }
 };

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { info, error } from '../../modules/log';
+import { WinstonLogger } from '../../modules/logger';
 import { responseError } from '../../config/response/server.error';
 import {
   createProduct,
@@ -9,20 +9,22 @@ import {
   deleteProduct,
 } from '../../services/v1/product.services';
 
+const logger = new WinstonLogger('product.controllers.ts');
+
 export const createProductC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
   await createProduct(req)
     .then((data: any) => {
-      info(data);
+      logger.debug(data);
       res.json({
         status: 'OK',
         message: data === null ? 'Product not created, user not found' : data,
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -33,6 +35,7 @@ export const getProductsC = async (
 ): Promise<void> => {
   await getProducts()
     .then((data: any) => {
+      logger.debug('data: ',data);
       res.send({
         status: 'OK',
         message:
@@ -40,7 +43,7 @@ export const getProductsC = async (
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -58,7 +61,7 @@ export const getProductsByUserC = async (
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -75,7 +78,7 @@ export const deleteProductC = async (
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };

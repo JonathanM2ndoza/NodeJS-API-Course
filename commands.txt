@@ -198,6 +198,9 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Intermediate-No
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i compression
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i -D  @types/compression
 
+#################################### Install winston ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i winston
 
 
-
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install dateformat
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install -d @types/dateformat

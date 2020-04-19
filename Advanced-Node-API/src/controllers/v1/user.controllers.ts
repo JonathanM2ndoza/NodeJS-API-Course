@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { Request, Response } from 'express';
 
-import { info, error } from '../../modules/log';
+import { WinstonLogger } from '../../modules/logger';
 import { generateHash, comparePassword } from '../../modules/encrypt';
 import { environment } from '../../config/environment';
 import { responseError } from '../../config/response/server.error';
@@ -14,6 +14,8 @@ import {
   getUserByOne,
 } from '../../services/v1/user.services';
 
+const logger = new WinstonLogger('user.controllers.ts');
+
 export const createUserC = async (
   req: Request,
   res: Response
@@ -24,7 +26,7 @@ export const createUserC = async (
     .then(async (hash: any) => {
       req.body.password = hash;
       const result = await createUser(req);
-      info(result);
+      logger.debug(result);
       const data = {
         userId: result._id,
         username: result.username,
@@ -35,7 +37,7 @@ export const createUserC = async (
       res.send({ status: 'OK', message: data });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       if (err.code && err.code === 11000) {
         responseError(res, err.keyValue, 'DUPLICATED_VALUES', 500);
         return;
@@ -50,14 +52,14 @@ export const updateUserC = async (
 ): Promise<void> => {
   await updateUser(req)
     .then((user: any) => {
-      info(user);
+      logger.debug(user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : 'User updated',
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -65,14 +67,14 @@ export const updateUserC = async (
 export const getUserC = async (req: Request, res: Response): Promise<void> => {
   await getUser(req)
     .then((user: any) => {
-      info(user);
+      logger.debug(user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : user,
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -80,7 +82,7 @@ export const getUserC = async (req: Request, res: Response): Promise<void> => {
 export const getUsersC = async (req: Request, res: Response): Promise<void> => {
   await getUsers()
     .then((users: any) => {
-      info(users);
+      logger.debug(users);
       res.send({
         status: 'OK',
         message:
@@ -88,7 +90,7 @@ export const getUsersC = async (req: Request, res: Response): Promise<void> => {
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -99,14 +101,14 @@ export const deleteUserC = async (
 ): Promise<void> => {
   await deleteUser(req)
     .then((user: any) => {
-      info(user);
+      logger.debug(user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : 'User deleted',
       });
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
@@ -143,7 +145,7 @@ export const login = async (req: Request, res: Response): Promise<any> => {
       );
     })
     .catch((err) => {
-      error(err);
+      logger.error(err);
       responseError(res, err.message, 'ERROR', 500);
     });
 };
