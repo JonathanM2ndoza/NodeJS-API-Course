@@ -92,4 +92,9 @@ export class WinstonLogger {
       throw err;
     }
   };
+
+  // For morgan middleware
+  public write = async (text: string) => {
+    this.info(text);
+  };
 }
