@@ -15,7 +15,7 @@ export const createProductC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  await createProduct(req)
+  createProduct(req)
     .then((data: any) => {
       logger.debug('data', data);
       res.json({
@@ -33,7 +33,7 @@ export const getProductsC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  await getProducts()
+  getProducts()
     .then((data: any) => {
       logger.debug('data', data);
       res.send({
@@ -52,7 +52,7 @@ export const getProductsByUserC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  await getProductsByUser(req)
+  getProductsByUser(req)
     .then((data: any) => {
       logger.debug('data', data);
       res.send({
@@ -71,7 +71,7 @@ export const deleteProductC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  await deleteProduct(req)
+  deleteProduct(req)
     .then((data: any) => {
       res.send({
         status: 'OK',

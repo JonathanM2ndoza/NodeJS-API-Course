@@ -220,3 +220,416 @@
 [2020-04-19 12:36:07] [error] [security.ts] [jwt expired]
 [2020-04-19 12:36:07] [info] [app.ts] [[0mGET /api/v1/users/5e9a6fd2211b6e11ab87b8d21 [31m500[0m 17.101 ms - 42[0m
 ]
+[2020-04-19 13:54:17] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-19 13:54:17] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 1015.586 ms - -[0m
+]
+[2020-04-19 14:40:13] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-19 15:22:18] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 15:22:18] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 15:22:18] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 15:22:24] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9ca4f0b4d4e8384b04c6d7,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$CKlaS22hWPJyP7hqbPHqMOs5UMHnM0l7.NrJ6YT1jDa8c/rLj.PiG',
+  data: { age: 25, isMale: true },
+  __v: 0
+}]
+[2020-04-19 15:22:24] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2765.458 ms - 171[0m
+]
+[2020-04-19 15:23:33] [error] [user.controllers.ts] [E11000 duplicate key error collection: store.users index: username_1 dup key: { username: "jmendoza3" }]
+[2020-04-19 15:23:33] [info] [app.ts] [[0mPOST /api/v1/users [31m500[0m 2750.189 ms - 65[0m
+]
+[2020-04-19 15:25:09] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 15:25:09] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 15:25:09] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 15:25:16] [error] [user.controllers.ts] [E11000 duplicate key error collection: store.users index: username_1 dup key: { username: "jmendoza3" }]
+[2020-04-19 15:25:16] [info] [app.ts] [[0mPOST /api/v1/users [31m500[0m 2758.964 ms - 65[0m
+]
+[2020-04-19 15:38:48] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 15:38:48] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 15:38:48] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 15:39:41] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9ca8fdef35403be67a322d,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$VUgXHrpmL/6w0i8hJ4FwheXfJTOliZSSqoRCd08eIVnhZyw2wSOwe',
+  data: { age: 25, isMale: true },
+  __v: 0
+}]
+[2020-04-19 15:39:41] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2796.449 ms - 171[0m
+]
+[2020-04-19 15:40:08] [error] [user.controllers.ts] [E11000 duplicate key error collection: store.users index: username_1 dup key: { username: "jmendoza3" }]
+[2020-04-19 15:40:08] [info] [app.ts] [[0mPOST /api/v1/users [31m500[0m 2740.368 ms - 65[0m
+]
+[2020-04-19 15:44:03] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 15:44:03] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 15:44:03] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 15:44:05] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-19 16:04:27] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 16:04:27] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 16:04:27] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 16:04:33] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9caed0560d2e3ea501a558,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$pxmcAHMVbnM405RoAIsOmeAdQ.Uherivsf8WmAZkGqO/DP/uLYMdq',
+  data: { age: 25, isMale: true },
+  __v: 0
+}]
+[2020-04-19 16:04:33] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2841.322 ms - 171[0m
+]
+[2020-04-19 16:05:33] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 16:05:33] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 16:05:33] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 16:05:41] [error] [security.ts] [jwt expired]
+[2020-04-19 16:05:41] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caed0560d2e3ea501a558 [31m500[0m 8.841 ms - 42[0m
+]
+[2020-04-19 16:05:47] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2649.905 ms - 252[0m
+]
+[2020-04-19 16:06:02] [debug] [user.controllers.ts] [user] [[object Object]]
+[2020-04-19 16:06:02] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caed0560d2e3ea501a558 [32m200[0m 205.340 ms - 40[0m
+]
+[2020-04-19 16:06:12] [debug] [user.controllers.ts] [user]
+[2020-04-19 16:06:12] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caed0560d2e3ea501a558 [32m200[0m 95.837 ms - 42[0m
+]
+[2020-04-19 16:06:22] [debug] [user.controllers.ts] [user]
+[2020-04-19 16:06:22] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caed0560d2e3ea501a558 [32m200[0m 90.433 ms - 42[0m
+]
+[2020-04-19 16:06:59] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9caf63c222493ed49e34dd,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$6K00W/v6ISfLLeoTgRc6HOC1hY2XJAcEwzR15HfzJCSMYCemFxMNu',
+  data: { age: 25, isMale: true },
+  __v: 0
+}]
+[2020-04-19 16:06:59] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2643.830 ms - 171[0m
+]
+[2020-04-19 16:07:10] [debug] [product.controllers.ts] [data] [{
+  images: [
+    'https://www.youtube.com/watch?v=OijrlItssOc',
+    'https://www.youtube.com/watch?v=OijrlItssOc'
+  ],
+  _id: 5e9caf6ec222493ed49e34de,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: 5e9caf63c222493ed49e34dd,
+  createdAt: 2020-04-19T20:07:10.527Z,
+  updatedAt: 2020-04-19T20:07:10.527Z,
+  __v: 0
+}]
+[2020-04-19 16:07:10] [info] [app.ts] [[0mPOST /api/v1/products [32m200[0m 212.657 ms - 493[0m
+]
+[2020-04-19 16:08:08] [debug] [user.controllers.ts] [user] [[object Object]]
+[2020-04-19 16:08:08] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caf63c222493ed49e34dd [32m200[0m 192.080 ms - 40[0m
+]
+[2020-04-19 16:08:52] [debug] [user.controllers.ts] [user]
+[2020-04-19 16:08:52] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caf63c222493ed49e34dd [32m200[0m 91.817 ms - 42[0m
+]
+[2020-04-19 16:09:11] [debug] [user.controllers.ts] [user]
+[2020-04-19 16:09:11] [info] [app.ts] [[0mDELETE /api/v1/users/5e9caf63c222493ed49e34dd [32m200[0m 98.290 ms - 42[0m
+]
+[2020-04-19 16:11:32] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 16:11:32] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 16:11:32] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 16:32:49] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 16:32:49] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 16:32:49] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 16:33:06] [error] [user.controllers.ts] [Cannot read property 'password' of null]
+[2020-04-19 16:33:06] [info] [app.ts] [[0mPOST /api/v1/login [31m500[0m 213.039 ms - 45[0m
+]
+[2020-04-19 16:33:59] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 16:33:59] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 16:33:59] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 16:34:02] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 217.775 ms - 45[0m
+]
+[2020-04-19 16:34:29] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 184.778 ms - 45[0m
+]
+[2020-04-19 16:36:33] [error] [user.controllers.ts] [Cannot set headers after they are sent to the client]
+[2020-04-19 16:36:33] [info] [app.ts] [[0mPOST /api/v1/login [31m500[0m 2717.180 ms - 47[0m
+]
+[2020-04-19 16:36:53] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 16:36:53] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 16:36:53] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 16:37:00] [info] [app.ts] [[0mPOST /api/v1/login [33m403[0m 2771.793 ms - 47[0m
+]
+[2020-04-19 16:37:13] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 3140.556 ms - 252[0m
+]
+[2020-04-19 17:17:04] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 3362.289 ms - 252[0m
+]
+[2020-04-19 17:17:07] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 91.157 ms - 45[0m
+]
+[2020-04-19 17:17:21] [info] [app.ts] [[0mPOST /api/v1/login [33m403[0m 2609.486 ms - 47[0m
+]
+[2020-04-19 17:17:33] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2610.190 ms - 252[0m
+]
+[2020-04-19 17:17:52] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9cc000727cfb426788d7b3,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$UpHGR3yen5UEeEgPv8F8DejorwSTjXJTxGDx2t84ZJmK1fbGa.ele',
+  data: { age: 15, isMale: true },
+  __v: 0
+}]
+[2020-04-19 17:17:52] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2644.316 ms - 171[0m
+]
+[2020-04-19 17:18:03] [error] [user.controllers.ts] [E11000 duplicate key error collection: store.users index: username_1 dup key: { username: "jmendoza3" }]
+[2020-04-19 17:18:03] [info] [app.ts] [[0mPOST /api/v1/users [31m500[0m 2625.000 ms - 65[0m
+]
+[2020-04-19 17:18:25] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2615.314 ms - 252[0m
+]
+[2020-04-19 17:18:52] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc000727cfb426788d7b3 [32m200[0m 192.151 ms - 40[0m
+]
+[2020-04-19 17:18:55] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc000727cfb426788d7b3 [32m200[0m 91.000 ms - 42[0m
+]
+[2020-04-19 17:18:59] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc000727cfb426788d7b3 [32m200[0m 91.400 ms - 42[0m
+]
+[2020-04-19 17:19:09] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$SrudN1I7RVNKb56OtZE3Z.1J4mDvG38GkuT65MtFSynilevqoG4GG',
+  data: { age: 15, isMale: true },
+  __v: 0
+}]
+[2020-04-19 17:19:09] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2644.697 ms - 171[0m
+]
+[2020-04-19 17:19:54] [debug] [user.controllers.ts] [result] [{
+  role: 'admin',
+  _id: 5e9cc07a727cfb426788d7b6,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3-3@gmail.com',
+  password: '$2b$15$Ie/bHgRW8XDAqVmatpVm6eCTK7a5k4OSyBmbgoCbqA4SOxQG4Q9Fe',
+  data: { age: 45, isMale: true },
+  __v: 0
+}]
+[2020-04-19 17:19:54] [info] [app.ts] [[0mPOST /api/v1/users [32m200[0m 2622.831 ms - 175[0m
+]
+[2020-04-19 17:20:47] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [32m200[0m 186.991 ms - 40[0m
+]
+[2020-04-19 17:21:20] [error] [security.ts] [jwt expired]
+[2020-04-19 17:21:20] [info] [app.ts] [[0mPUT /api/v1/users/5e9523bd5425422813952b82 [31m500[0m 2.271 ms - 42[0m
+]
+[2020-04-19 17:21:26] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2626.374 ms - 252[0m
+]
+[2020-04-19 17:22:22] [debug] [user.controllers.ts] [user] [{
+  role: 'admin',
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$SrudN1I7RVNKb56OtZE3Z.1J4mDvG38GkuT65MtFSynilevqoG4GG',
+  data: { age: 15, isMale: true },
+  __v: 0
+}]
+[2020-04-19 17:22:22] [info] [app.ts] [[0mPUT /api/v1/users/5e9cc04d727cfb426788d7b5 [32m200[0m 102.507 ms - 40[0m
+]
+[2020-04-19 17:22:27] [debug] [user.controllers.ts] [user] [{
+  role: 'seller',
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$SrudN1I7RVNKb56OtZE3Z.1J4mDvG38GkuT65MtFSynilevqoG4GG',
+  data: { age: 45, isMale: true },
+  __v: 0
+}]
+[2020-04-19 17:22:27] [info] [app.ts] [[0mPUT /api/v1/users/5e9cc04d727cfb426788d7b5 [32m200[0m 94.707 ms - 40[0m
+]
+[2020-04-19 17:22:55] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2655.088 ms - 253[0m
+]
+[2020-04-19 17:23:09] [error] [security.ts] [Invalid role]
+[2020-04-19 17:23:09] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [33m403[0m 1.941 ms - 43[0m
+]
+[2020-04-19 17:23:12] [error] [security.ts] [Invalid role]
+[2020-04-19 17:23:12] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [33m403[0m 1.181 ms - 43[0m
+]
+[2020-04-19 17:23:33] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2617.894 ms - 252[0m
+]
+[2020-04-19 17:23:58] [debug] [user.controllers.ts] [user] [{
+  role: 'seller',
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$SrudN1I7RVNKb56OtZE3Z.1J4mDvG38GkuT65MtFSynilevqoG4GG',
+  data: { age: 45, isMale: true },
+  __v: 0
+}]
+[2020-04-19 17:23:58] [info] [app.ts] [[0mGET /api/v1/users/5e9cc04d727cfb426788d7b5 [32m200[0m 92.240 ms - 253[0m
+]
+[2020-04-19 17:24:18] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-19 17:24:18] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 102.403 ms - 413[0m
+]
+[2020-04-19 17:26:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 17:26:57] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 17:26:57] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 17:27:00] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-19 17:53:34] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-19 17:53:34] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-19 17:53:34] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-19 17:53:53] [debug] [product.controllers.ts] [data]
+[2020-04-19 17:53:53] [info] [app.ts] [[0mPOST /api/v1/products [32m200[0m 151.110 ms - 63[0m
+]
+[2020-04-19 17:54:01] [debug] [product.controllers.ts] [data]
+[2020-04-19 17:54:01] [info] [app.ts] [[0mPOST /api/v1/products [32m200[0m 634.356 ms - 63[0m
+]
+[2020-04-19 17:54:46] [debug] [product.controllers.ts] [data] [{
+  images: [
+    'https://www.youtube.com/watch?v=OijrlItssOc',
+    'https://www.youtube.com/watch?v=OijrlItssOc'
+  ],
+  _id: 5e9cc8a6880a6d49ca642000,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: 5e9cc04d727cfb426788d7b5,
+  createdAt: 2020-04-19T21:54:46.330Z,
+  updatedAt: 2020-04-19T21:54:46.330Z,
+  __v: 0
+}]
+[2020-04-19 17:54:46] [info] [app.ts] [[0mPOST /api/v1/products [32m200[0m 329.328 ms - 493[0m
+]
+[2020-04-19 17:55:09] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9cc8a6880a6d49ca642000,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'seller',
+    _id: 5e9cc04d727cfb426788d7b5,
+    username: 'jmendoza3-3',
+    email: 'jonathan.m2ndoza3@gmail.com',
+    data: { age: 45, isMale: true }
+  }
+}]
+[2020-04-19 17:55:09] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 329.237 ms - -[0m
+]
+[2020-04-19 17:55:26] [debug] [product.controllers.ts] [data] [{
+  images: [
+    'https://www.youtube.com/watch?v=OijrlItssOc',
+    'https://www.youtube.com/watch?v=OijrlItssOc'
+  ],
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: 5e9a6fd2211b6e11ab87b8d2,
+  createdAt: 2020-04-18T03:30:28.614Z,
+  updatedAt: 2020-04-18T03:30:28.614Z,
+  __v: 0
+},{
+  images: [
+    'https://www.youtube.com/watch?v=OijrlItssOc',
+    'https://www.youtube.com/watch?v=OijrlItssOc'
+  ],
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: 5e9a6fd2211b6e11ab87b8d2,
+  createdAt: 2020-04-18T03:31:28.499Z,
+  updatedAt: 2020-04-18T03:31:28.499Z,
+  __v: 0
+}]
+[2020-04-19 17:55:26] [info] [app.ts] [[0mGET /api/v1/products/5e9a6fd2211b6e11ab87b8d2 [32m200[0m 102.932 ms - 963[0m
+]
+[2020-04-19 17:55:42] [info] [app.ts] [[0mDELETE /api/v1/products/5e9a4cd3ac4d787ead5444c5 [32m200[0m 191.335 ms - 45[0m
+]
+[2020-04-19 17:55:50] [info] [app.ts] [[0mDELETE /api/v1/products/5e9cc8a6880a6d49ca642000 [32m200[0m 112.968 ms - 493[0m
+]
+[2020-04-19 17:55:57] [info] [app.ts] [[0mDELETE /api/v1/products/5e9cc8a6880a6d49ca642000 [32m200[0m 188.093 ms - 45[0m
+]
+[2020-04-19 19:18:41] [info] [mongo.ts] [Mongoose default connection is disconnected]

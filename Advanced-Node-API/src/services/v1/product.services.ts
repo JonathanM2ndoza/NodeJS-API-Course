@@ -7,20 +7,13 @@ export const createProduct = async (req: Request): Promise<Product> => {
   const product = new ProductSchema(req.body);
   req.params.userId = req.body.user;
 
-  return await getUser(req)
+  return getUser(req)
     .then((data: any) => {
-      if (data === null) {
-        return data;
-      } else {
-        return product
-          .save()
-          .then((data: Product) => {
-            return data;
-          })
-          .catch((error: Error) => {
-            throw error;
-          });
-      }
+      if (data === null) return data;
+      else return product.save();
+    })
+    .then((data: Product) => {
+      return data;
     })
     .catch((error: Error) => {
       throw error;
@@ -28,7 +21,7 @@ export const createProduct = async (req: Request): Promise<Product> => {
 };
 
 export const getProducts = async (): Promise<Product[]> =>
-  await ProductSchema.find(/*{ price: { $gt: 2.000 } }*/)
+  ProductSchema.find(/*{ price: { $gt: 2.000 } }*/)
     .select('title desc price')
     .populate('user', 'username email data role')
     .then((data: Product[]) => {
@@ -39,7 +32,7 @@ export const getProducts = async (): Promise<Product[]> =>
     });
 
 export const getProductsByUser = async (req: Request): Promise<Product[]> =>
-  await ProductSchema.find({
+  ProductSchema.find({
     user: req.params.userId,
   })
     .then((data: Product[]) => {
@@ -50,7 +43,7 @@ export const getProductsByUser = async (req: Request): Promise<Product[]> =>
     });
 
 export const deleteProduct = async (req: Request): Promise<any> =>
-  await ProductSchema.findByIdAndDelete(req.params.productId)
+  ProductSchema.findByIdAndDelete(req.params.productId)
     .then((data: any) => {
       return data;
     })

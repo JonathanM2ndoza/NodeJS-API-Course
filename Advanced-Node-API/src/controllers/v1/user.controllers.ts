@@ -22,10 +22,12 @@ export const createUserC = async (
 ): Promise<void> => {
   const password = req.body.password;
   const sizeSalt = environment.sizeSalt;
-  await generateHash(password, sizeSalt)
-    .then(async (hash: any) => {
+  generateHash(password, sizeSalt)
+    .then((hash: any) => {
       req.body.password = hash;
-      const result = await createUser(req);
+      return createUser(req);
+    })
+    .then((result: any) => {
       logger.debug('result', result);
       const data = {
         userId: result._id,
@@ -50,7 +52,7 @@ export const updateUserC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  await updateUser(req)
+  updateUser(req)
     .then((user: any) => {
       logger.debug('user', user);
       res.send({
@@ -65,7 +67,7 @@ export const updateUserC = async (
 };
 
 export const getUserC = async (req: Request, res: Response): Promise<void> => {
-  await getUser(req)
+  getUser(req)
     .then((user: any) => {
       logger.debug('user', user);
       res.send({
@@ -80,7 +82,7 @@ export const getUserC = async (req: Request, res: Response): Promise<void> => {
 };
 
 export const getUsersC = async (req: Request, res: Response): Promise<void> => {
-  await getUsers()
+  getUsers()
     .then((users: any) => {
       logger.debug('users', users);
       res.send({
@@ -99,9 +101,8 @@ export const deleteUserC = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  await deleteUser(req)
+  deleteUser(req)
     .then((user: any) => {
-      logger.debug('user', user);
       res.send({
         status: 'OK',
         message: user === null ? 'User not found' : 'User deleted',
@@ -114,38 +115,36 @@ export const deleteUserC = async (
 };
 
 export const login = async (req: Request, res: Response): Promise<any> => {
-  const { email, password } = req.body;
+  try {
+    const { email, password } = req.body;
 
-  await getUserByOne({ email })
-    .then(async (user: any) => {
-      if (!user) {
-        responseError(res, 'User not found', 'ERROR', 401);
-        return;
-      }
-      await comparePassword(password, user.password).then(
-        (validPassword: any) => {
-          if (!validPassword) {
-            responseError(res, 'Invalid password', 'ERROR', 403);
-            return;
-          }
-          const tokenExpire = environment.jwtExpireSeconds;
-          const token = jwt.sign(
-            { userId: user._id, role: user.role },
-            environment.jwtSecret,
-            { expiresIn: tokenExpire }
-          );
-          res.send({
-            status: 'OK',
-            message: {
-              token,
-              tokenExpire,
-            },
-          });
-        }
-      );
-    })
-    .catch((err) => {
-      logger.error(err);
-      responseError(res, err.message, 'ERROR', 500);
+    const user = await getUserByOne({ email });
+    if (!user) {
+      responseError(res, 'User not found', 'ERROR', 401);
+      return;
+    }
+
+    const validPassword = await comparePassword(password, user.password);
+    if (!validPassword) {
+      responseError(res, 'Invalid password', 'ERROR', 403);
+      return;
+    }
+
+    const tokenExpire = environment.jwtExpireSeconds;
+    const token = jwt.sign(
+      { userId: user._id, role: user.role },
+      environment.jwtSecret,
+      { expiresIn: tokenExpire }
+    );
+    res.send({
+      status: 'OK',
+      message: {
+        token,
+        tokenExpire,
+      },
     });
+  } catch (err) {
+    logger.error(err);
+    responseError(res, err.message, 'ERROR', 500);
+  }
 };

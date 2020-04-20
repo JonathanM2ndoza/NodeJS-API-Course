@@ -14,7 +14,7 @@ export const createUser = async (req: Request): Promise<User> => {
   user.data = data;
   if (role) user.role = role;
 
-  return await user
+  return user
     .save()
     .then((data: User) => {
       return data;
@@ -28,7 +28,7 @@ export const updateUser = async (req: Request): Promise<any> => {
   let params: any = {};
   for (let prop in req.body) if (req.body[prop]) params[prop] = req.body[prop];
 
-  return await UserSchema.findByIdAndUpdate(req.params.userId, params)
+  return UserSchema.findByIdAndUpdate(req.params.userId, params)
     .then((data: any) => {
       return data;
     })
@@ -38,7 +38,7 @@ export const updateUser = async (req: Request): Promise<any> => {
 };
 
 export const getUser = async (req: Request): Promise<any> =>
-  await UserSchema.findById(req.params.userId)
+  UserSchema.findById(req.params.userId)
     .then((data: any) => {
       return data;
     })
@@ -47,7 +47,7 @@ export const getUser = async (req: Request): Promise<any> =>
     });
 
 export const getUsers = async (): Promise<any> =>
-  await UserSchema.find()
+  UserSchema.find()
     .select({ password: 0, __v: 0, role: 0 })
     .then((data: any) => {
       return data;
@@ -57,26 +57,20 @@ export const getUsers = async (): Promise<any> =>
     });
 
 export const deleteUser = async (req: Request): Promise<any> =>
-  await UserSchema.findByIdAndDelete(req.params.userId)
-    .then(async (data: any) => {
-      if (data === null) {
-        return data;
-      } else {
-        return await ProductSchema.deleteMany({ user: req.params.userId })
-          .then((data: any) => {
-            return data;
-          })
-          .catch((error: Error) => {
-            throw error;
-          });
-      }
+  UserSchema.findByIdAndDelete(req.params.userId)
+    .then((data: any) => {
+      if (data === null) return data;
+      else return ProductSchema.deleteMany({ user: req.params.userId });
+    })
+    .then((data: any) => {
+      return data;
     })
     .catch((error: Error) => {
       throw error;
     });
 
 export const getUserByOne = async (item: any): Promise<any> =>
-  await UserSchema.findOne(item)
+  UserSchema.findOne(item)
     .then((data: any) => {
       return data;
     })

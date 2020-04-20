@@ -21,7 +21,7 @@ Reference: https://medium.com/@chathuranga94/nodejs-architecture-concurrency-mod
 
 # NodeJS-API-Course
 
-Examples of API RESTful with Node JS and Mongo DB Atlas 
+Examples of API RESTful with Node JS and Mongo DB Atlas
 
 ### Basic-Node-JS
  
@@ -31,14 +31,14 @@ Examples of API RESTful with Node JS and Mongo DB Atlas
 Creating server with express, Routes, Controller, Model, Middleware, Mongo DB Atlas, Mongoose
 
 ### Intermediate-Node-API
-Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
+Express, Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
 Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Token (JWT) 
 
 ### Intermediate-Node-API-TypeScript
-Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
-Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Token (JWT).
+Express, Eslint and Prettier, CRUD operations, Project structure for an Express REST API (Model, Routes, Controllers, Services), 
+Async Arrow Functions, Error Handling, Mongoose and Mongo DB Atlas, JSON Web Token (JWT)
 
-Migrating To TypeScript, Promises, Pretty code.
+Migrating To TypeScript, Promises, Async Await, Pretty code.
 
 ### Advanced-Node-API
-Template for project structure with NodeJS (RESTful API), Mongo DB Atlas, JSON Web Token (JWT), TypeScript. Handle errors. Environment variables for development and production. Logging library. Best Practices for Node.js Development.
+Express, Template for project structure with NodeJS (RESTful API), Mongo DB Atlas, JSON Web Token (JWT), TypeScript. Handle errors. Environment variables for development and production. Logging library. Best Practices for Node.js Development

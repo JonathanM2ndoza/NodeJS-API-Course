@@ -4,17 +4,13 @@ export const generateHash = async (
   password: string,
   sizeSalt: number
 ): Promise<string> =>
-  await bcrypt
+  bcrypt
     .genSalt(sizeSalt)
-    .then(async (salt: string) => {
-      return await bcrypt
-        .hash(password, salt)
-        .then((hash: string) => {
-          return hash;
-        })
-        .catch((error: Error) => {
-          throw error;
-        });
+    .then((salt: string) => {
+      return bcrypt.hash(password, salt);
+    })
+    .then((hash: string) => {
+      return hash;
     })
     .catch((error: Error) => {
       throw error;
@@ -24,7 +20,7 @@ export const comparePassword = async (
   passwordReq: string,
   passwordDB: string
 ): Promise<boolean> =>
-  await bcrypt
+  bcrypt
     .compare(passwordReq, passwordDB)
     .then((data: boolean) => {
       return data;
