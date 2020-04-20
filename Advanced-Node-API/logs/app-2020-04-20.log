@@ -141,3 +141,4 @@
 }]
 [2020-04-20 00:05:49] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 166.812 ms - 413[0m
 ]
+[2020-04-20 00:06:29] [info] [mongo.ts] [Mongoose default connection is disconnected]
