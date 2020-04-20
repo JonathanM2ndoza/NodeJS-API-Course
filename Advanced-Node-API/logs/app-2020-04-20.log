@@ -1,0 +1,52 @@
+[2020-04-20 00:02:10] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-20 00:02:10] [info] [mongo.ts] [Mongo DB Atlas. Connected]
+[2020-04-20 00:02:10] [info] [mongo.ts] [NodeJS API listining on port: 3000]
+[2020-04-20 00:02:24] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-20 00:02:24] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 712.407 ms - -[0m
+]
+[2020-04-20 00:02:35] [error] [user.controllers.ts] [E11000 duplicate key error collection: store.users index: email_1 dup key: { email: "jonathan.m2ndoza3@gmail.com" }]
+[2020-04-20 00:02:35] [info] [app.ts] [[0mPOST /api/v1/users [31m500[0m 2776.791 ms - 80[0m
+]
+[2020-04-20 00:02:46] [error] [security.ts] [jwt expired]
+[2020-04-20 00:02:46] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [31m500[0m 6.078 ms - 42[0m
+]
+[2020-04-20 00:02:53] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2702.083 ms - 252[0m
+]
+[2020-04-20 00:03:06] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [32m200[0m 90.401 ms - 42[0m
+]
