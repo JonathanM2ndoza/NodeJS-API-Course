@@ -5,7 +5,7 @@ import compression from 'compression';
 
 import { environment } from './config/environment';
 import routes from './routes/v1';
-import mongo from './config/database/mongo';
+import { connect } from './config/database/mongo';
 import { ignoreFavicon } from './middlewares/favicon';
 import { WinstonLogger } from './modules/logger';
 
@@ -24,7 +24,15 @@ declare global {
 }
 
 // BD
-mongo(app, environment.mongoURI, port);
+connect()
+  .then(() => {
+    logger.info('Mongo DB Atlas. Connected');
+    app.listen(port, () => {
+      logger.info(`NodeJS API listining on port: ${port}`);
+    });
+  })
+  .catch((err) => logger.error(err));
+
 // Middlewares
 app.use(morgan(environment.morganFormat, { stream: logger }));
 app.use(bodyParser.json());

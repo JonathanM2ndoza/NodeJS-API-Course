@@ -201,6 +201,6 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-A
 #################################### Install winston ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i winston
 
-
+#################################### Install dateformat ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install dateformat
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install -d @types/dateformat

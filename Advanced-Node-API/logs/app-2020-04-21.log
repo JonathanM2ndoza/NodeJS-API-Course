@@ -133,3 +133,71 @@
 [2020-04-21 15:48:11] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 490.477 ms - -[0m
 ]
 [2020-04-21 15:48:19] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-21 19:21:00] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-21 19:21:00] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-21 19:21:00] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-21 19:21:31] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-21 19:21:55] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-21 19:21:55] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-21 19:21:55] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-21 19:22:26] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-21 19:22:26] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 434.219 ms - -[0m
+]
+[2020-04-21 19:22:39] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2835.324 ms - 252[0m
+]
+[2020-04-21 19:22:43] [error] [security.ts] [jwt expired]
+[2020-04-21 19:22:43] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [31m500[0m 4.779 ms - 42[0m
+]
+[2020-04-21 19:30:39] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-21 19:30:39] [info] [mongo.ts] [Mongoose default connection is disconnected due to application termination]
+[2020-04-21 19:31:57] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-21 19:31:57] [error] [app.ts] [connection <monitor> to 54.166.37.70:27017 closed]
+[2020-04-21 19:31:57] [error] [mongo.ts] [connection <monitor> to 54.166.37.70:27017 closed]
+[2020-04-21 19:31:57] [info] [mongo.ts] [Failed to connect to DB mongodb+srv://jmendoza:zuZYkSpMIpSGqgLD@cluster0-7rxkw.mongodb.net/store?retryWrites=true&w=majority on startup ] [MongooseServerSelectionError: connection <monitor> to 54.166.37.70:27017 closed]
+[2020-04-21 19:34:03] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-21 19:34:03] [error] [app.ts] [connection <monitor> to 54.166.37.70:27017 closed]
+[2020-04-21 19:34:03] [error] [mongo.ts] [connection <monitor> to 54.166.37.70:27017 closed]
+[2020-04-21 19:34:03] [info] [mongo.ts] [Failed to connect to DB mongodb+srv://jmendoza:zuZYkSpMIpSGqgLD@cluster0-7rxkw.mongodb.net/store?retryWrites=true&w=majority on startup ] [MongooseServerSelectionError: connection <monitor> to 54.166.37.70:27017 closed]
+[2020-04-21 19:35:53] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-21 19:35:53] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-21 19:35:53] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-21 19:36:00] [error] [security.ts] [jwt expired]
+[2020-04-21 19:36:00] [info] [app.ts] [[0mDELETE /api/v1/users/5e9cc07a727cfb426788d7b6 [31m500[0m 10.619 ms - 42[0m
+]
+[2020-04-21 19:36:05] [info] [mongo.ts] [Mongoose default connection is disconnected]
