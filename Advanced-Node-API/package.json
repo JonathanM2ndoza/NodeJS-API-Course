@@ -6,7 +6,8 @@
     "scripts": {
         "start": "tsc && node dist/app.js",
         "dev": "nodemon src/app.ts",
-        "build": "tsc -p ."
+        "build": "tsc -p .",
+        "test": "mocha --recursive --exit"
     },
     "keywords": [
         "node",
