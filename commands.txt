@@ -204,3 +204,8 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-A
 #################################### Install dateformat ####################################
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install dateformat
 jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install -d @types/dateformat
+
+
+#################################### Install Unit Test ####################################
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i -D mocha chai supertest
+
