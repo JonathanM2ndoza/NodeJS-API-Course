@@ -2,49 +2,62 @@ import mongoose from 'mongoose';
 import { WinstonLogger } from '../../modules/logger';
 import { environment } from '../../config/environment';
 
-const logger = new WinstonLogger('mongo.ts');
-const mongoURI = environment.mongoURI;
+export class ConnectionMongoDB {
+  logger: WinstonLogger;
+  mongoURI: string;
 
-export const connect = (): Promise<any> => {
-  return new Promise((resolve, reject) => {
-    mongoose
-      .connect(mongoURI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true,
-      })
-      .then(() => {
-        resolve();
-      })
-      .catch((err) => {
-        logger.error(err);
-        reject(err);
-      });
-  });
-};
+  constructor() {
+    this.logger = new WinstonLogger('mongo.ts');
+    this.mongoURI = environment.mongoURI;
+    this.connectionStatus();
+  }
 
-export const close = (): Promise<void> => {
-  return mongoose.disconnect();
-};
+  public connect = (): Promise<any> => {
+    return new Promise((resolve, reject) => {
+      mongoose
+        .connect(this.mongoURI, {
+          useNewUrlParser: true,
+          useUnifiedTopology: true,
+          useFindAndModify: false,
+          useCreateIndex: true,
+        })
+        .then(() => {
+          resolve();
+        })
+        .catch((err) => {
+          this.logger.error(err);
+          reject(err);
+        });
+    });
+  };
 
-mongoose.connection.on('connected', () =>
-  logger.info('Mongoose default connection is open')
-);
+  public close = (): Promise<void> => {
+    return mongoose.disconnect();
+  };
 
-mongoose.connection.on('error', (err) =>
-  logger.info('Failed to connect to DB ' + mongoURI + ' on startup ', err)
-);
-
-mongoose.connection.on('disconnected', () =>
-  logger.info('Mongoose default connection is disconnected')
-);
-
-process.on('SIGINT', () => {
-  mongoose.connection.close(() => {
-    logger.info(
-      'Mongoose default connection is disconnected due to application termination'
+  connectionStatus = (): void => {
+    mongoose.connection.on('connected', () =>
+      this.logger.info('Mongoose default connection is open')
     );
-    process.exit(0);
-  });
-});
+
+    mongoose.connection.on('error', (err) =>
+      this.logger.info(
+        'Failed to connect to DB ' + this.mongoURI + ' on startup ',
+        err
+      )
+    );
+
+    mongoose.connection.on('disconnected', () =>
+      this.logger.info('Mongoose default connection is disconnected')
+    );
+
+    process.on('SIGINT', () => {
+      mongoose.connection.close(() => {
+        this.logger.info(
+          'Mongoose default connection is disconnected due to application termination'
+        );
+        process.exit(0);
+      });
+    });
+  };
+}
