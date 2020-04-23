@@ -26,7 +26,9 @@ describe('GET /api/v1/users', () => {
     }
   });
 
-  it('GET /api/v1/login', (done) => {
+  let token: string;
+
+  it('POST /api/v1/login', (done) => {
     const body = {
       email: 'jonathan.m2ndoza1@gmail.com',
       password: '123456jm-',
@@ -48,11 +50,12 @@ describe('GET /api/v1/users', () => {
           .property('message')
           .to.be.an('object')
           .to.have.property('tokenExpire');
+        token = response.body.message.token;
         done();
       });
   });
 
-  it('It should NOT GET /api/v1/login', (done) => {
+  it('It should NOT POST /api/v1/login', (done) => {
     const body = {
       email: 'jonathan.m2ndoza1@gmail.com1',
       password: '123456jm-',
@@ -67,6 +70,23 @@ describe('GET /api/v1/users', () => {
         response.body.should.be.a('object');
         response.body.should.have.property('status').eq('ERROR');
         response.body.should.have.property('message').eq('User not found');
+        done();
+      });
+  });
+
+  it('GET /api/v1/users', (done) => {
+    chai
+      .request(server)
+      .get('/api/v1/users')
+      .set('token', token)
+      .end((err, response) => {
+        response.should.have.status(200);
+        response.body.should.be.a('object');
+        response.body.should.have.property('status').eq('OK');
+        response.body.should.have
+          .property('message')
+          .to.be.an('array')
+          .to.have.lengthOf(3);
         done();
       });
   });

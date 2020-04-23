@@ -317,3 +317,771 @@ AssertionError: expected 'User not found' to equal 'User not founds'
 ]
 [2020-04-23 14:19:27] [info] [mongo.ts] [Mongoose default connection is disconnected]
 [2020-04-23 14:19:27] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:30:17] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:42:16] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:42:16] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:42:16] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:42:31] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:42:31] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:42:31] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 14:42:31] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 242.862 ms - -[0m
+]
+[2020-04-23 14:42:31] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 2.015 ms - 155[0m
+]
+[2020-04-23 14:42:31] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:42:31] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:42:31] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:42:31] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:42:34] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2673.298 ms - 252[0m
+]
+[2020-04-23 14:42:34] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 98.665 ms - 45[0m
+]
+[2020-04-23 14:42:34] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:42:34] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:42:41] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:07:10] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:07:10] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 16:07:10] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 16:07:11] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:07:22] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:07:22] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 16:07:22] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 16:07:42] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:07:42] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:07:43] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:07:43] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 378.618 ms - -[0m
+]
+[2020-04-23 16:07:43] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 2.851 ms - 155[0m
+]
+[2020-04-23 16:07:43] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:07:43] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:07:44] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:07:44] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:07:47] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2746.473 ms - 252[0m
+]
+[2020-04-23 16:07:47] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 148.827 ms - 45[0m
+]
+[2020-04-23 16:07:47] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:07:47] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:18:30] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:18:30] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:18:33] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:18:33] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 2424.587 ms - -[0m
+]
+[2020-04-23 16:18:33] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.760 ms - 155[0m
+]
+[2020-04-23 16:18:33] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:18:33] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:18:34] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:18:34] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:18:36] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2702.911 ms - 252[0m
+]
+[2020-04-23 16:18:37] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 187.535 ms - 45[0m
+]
+[2020-04-23 16:18:37] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:18:37] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:23:34] [error] [security.ts] [jwt expired]
+[2020-04-23 16:23:34] [info] [app.ts] [[0mGET /api/v1/users/ [31m500[0m 3.264 ms - 42[0m
+]
+[2020-04-23 16:23:44] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2734.350 ms - 252[0m
+]
+[2020-04-23 16:23:55] [debug] [user.controllers.ts] [user] [{
+  role: 'seller',
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$SrudN1I7RVNKb56OtZE3Z.1J4mDvG38GkuT65MtFSynilevqoG4GG',
+  data: { age: 45, isMale: true },
+  __v: 0
+}]
+[2020-04-23 16:23:55] [info] [app.ts] [[0mGET /api/v1/users/5e9cc04d727cfb426788d7b5 [32m200[0m 194.626 ms - 253[0m
+]
+[2020-04-23 16:24:03] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-23 16:24:03] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 269.795 ms - 413[0m
+]
+[2020-04-23 16:25:14] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:25:14] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:25:15] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:25:15] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 388.194 ms - -[0m
+]
+[2020-04-23 16:25:15] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.745 ms - 155[0m
+]
+[2020-04-23 16:25:15] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:25:15] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:25:17] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:25:17] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:25:21] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 3121.600 ms - 252[0m
+]
+[2020-04-23 16:25:21] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 189.932 ms - 45[0m
+]
+[2020-04-23 16:25:21] [error] [security.ts] [jwt expired]
+[2020-04-23 16:25:21] [info] [app.ts] [[0mGET /api/v1/users [31m500[0m 1.477 ms - 42[0m
+]
+[2020-04-23 16:25:21] [error] [mongo.ts] [uncaughtException: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:80:30
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:25:21] [error] [mongo.ts] [uncaughtException: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:80:30
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:25:54] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2734.995 ms - 252[0m
+]
+[2020-04-23 16:26:58] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:26:58] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:26:58] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:26:58] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 388.003 ms - -[0m
+]
+[2020-04-23 16:26:58] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 1.121 ms - 155[0m
+]
+[2020-04-23 16:26:58] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:26:58] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:27:00] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:27:00] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:27:02] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2704.886 ms - 252[0m
+]
+[2020-04-23 16:27:03] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 187.305 ms - 45[0m
+]
+[2020-04-23 16:27:03] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-23 16:27:03] [info] [app.ts] [[0mGET /api/v1/users [32m200[0m 194.809 ms - 413[0m
+]
+[2020-04-23 16:27:03] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:27:03] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:36:55] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:36:55] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:36:57] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:36:57] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 1201.670 ms - -[0m
+]
+[2020-04-23 16:36:57] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.504 ms - 155[0m
+]
+[2020-04-23 16:36:57] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:36:57] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:36:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:36:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:37:00] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2672.118 ms - 252[0m
+]
+[2020-04-23 16:37:00] [error] [mongo.ts] [uncaughtException: response.body.property is not a function
+TypeError: response.body.property is not a function
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:53:34
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:37:00] [error] [mongo.ts] [uncaughtException: response.body.property is not a function
+TypeError: response.body.property is not a function
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:53:34
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:44:10] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:44:10] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:44:12] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:44:12] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 2158.598 ms - -[0m
+]
+[2020-04-23 16:44:12] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.557 ms - 155[0m
+]
+[2020-04-23 16:44:12] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:44:12] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:44:13] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:44:13] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:44:16] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2718.619 ms - 252[0m
+]
+[2020-04-23 16:44:16] [error] [mongo.ts] [uncaughtException: response.body.get is not a function
+TypeError: response.body.get is not a function
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:53:34
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:44:16] [error] [mongo.ts] [uncaughtException: response.body.get is not a function
+TypeError: response.body.get is not a function
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:53:34
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:51:39] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:51:39] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:51:40] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:51:40] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 1405.625 ms - -[0m
+]
+[2020-04-23 16:51:40] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.597 ms - 155[0m
+]
+[2020-04-23 16:51:40] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:51:40] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:51:42] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:51:42] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:51:44] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2666.426 ms - 252[0m
+]
+[2020-04-23 16:51:45] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 155.049 ms - 45[0m
+]
+[2020-04-23 16:51:45] [error] [security.ts] [jwt expired]
+[2020-04-23 16:51:45] [info] [app.ts] [[0mGET /api/v1/users [31m500[0m 1.411 ms - 42[0m
+]
+[2020-04-23 16:51:45] [error] [mongo.ts] [uncaughtException: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:87:30
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:51:45] [error] [mongo.ts] [uncaughtException: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:87:30
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:56:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:56:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:56:57] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:56:57] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 325.056 ms - -[0m
+]
+[2020-04-23 16:56:57] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.559 ms - 155[0m
+]
+[2020-04-23 16:56:57] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:56:57] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:56:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:56:57] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:57:00] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2744.020 ms - 252[0m
+]
+[2020-04-23 16:57:00] [error] [mongo.ts] [uncaughtException: Unexpected token o in JSON at position 1
+SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:53:24
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:57:00] [error] [mongo.ts] [uncaughtException: Unexpected token o in JSON at position 1
+SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:53:24
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:58:36] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:58:36] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:58:36] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 16:58:36] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 326.451 ms - -[0m
+]
+[2020-04-23 16:58:36] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.361 ms - 155[0m
+]
+[2020-04-23 16:58:36] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:58:36] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 16:58:37] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:58:37] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 16:58:40] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2759.247 ms - 252[0m
+]
+[2020-04-23 16:58:40] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 155.735 ms - 45[0m
+]
+[2020-04-23 16:58:40] [error] [security.ts] [jwt expired]
+[2020-04-23 16:58:40] [info] [app.ts] [[0mGET /api/v1/users [31m500[0m 1.646 ms - 42[0m
+]
+[2020-04-23 16:58:40] [error] [mongo.ts] [uncaughtException: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:87:30
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 16:58:40] [error] [mongo.ts] [uncaughtException: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:87:30
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 17:02:03] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 17:02:03] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 17:02:03] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 17:02:03] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 324.826 ms - -[0m
+]
+[2020-04-23 17:02:03] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 0.316 ms - 155[0m
+]
+[2020-04-23 17:02:03] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 17:02:03] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 17:02:04] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 17:02:04] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 17:02:07] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2702.870 ms - 252[0m
+]
+[2020-04-23 17:02:07] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 158.006 ms - 45[0m
+]
+[2020-04-23 17:02:07] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-23 17:02:07] [info] [app.ts] [[0mGET /api/v1/users [32m200[0m 160.919 ms - 413[0m
+]
+[2020-04-23 17:02:07] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 17:02:07] [info] [mongo.ts] [Mongoose default connection is disconnected]
