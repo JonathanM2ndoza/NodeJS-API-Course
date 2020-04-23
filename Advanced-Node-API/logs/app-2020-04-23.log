@@ -131,3 +131,189 @@ AssertionError: expected { Object (token, tokenExpire) } to have property 'token
 [2020-04-23 14:13:07] [info] [mongo.ts] [Mongoose default connection is open]
 [2020-04-23 14:13:07] [info] [app.ts] [Mongo DB Atlas. Connected]
 [2020-04-23 14:13:07] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:14:58] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 125.885 ms - 45[0m
+]
+[2020-04-23 14:17:42] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:17:42] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:17:42] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:17:59] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:17:59] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:00] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 14:18:00] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 328.032 ms - -[0m
+]
+[2020-04-23 14:18:00] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 1.833 ms - 155[0m
+]
+[2020-04-23 14:18:00] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:18:00] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:18:01] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:01] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:04] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2725.225 ms - 252[0m
+]
+[2020-04-23 14:18:04] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 98.399 ms - 45[0m
+]
+[2020-04-23 14:18:04] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:18:04] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:18:37] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:37] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:18:37] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:18:45] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:45] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:45] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 14:18:45] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 420.437 ms - -[0m
+]
+[2020-04-23 14:18:45] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 3.574 ms - 155[0m
+]
+[2020-04-23 14:18:45] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:18:45] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:18:46] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:46] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:18:49] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2752.217 ms - 252[0m
+]
+[2020-04-23 14:18:50] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 592.520 ms - 45[0m
+]
+[2020-04-23 14:18:50] [error] [mongo.ts] [uncaughtException: expected 'User not found' to equal 'User not founds'
+AssertionError: expected 'User not found' to equal 'User not founds'
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:69:55
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 14:18:50] [error] [mongo.ts] [uncaughtException: expected 'User not found' to equal 'User not founds'
+AssertionError: expected 'User not found' to equal 'User not founds'
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:69:55
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 14:19:11] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:19:11] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:19:11] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:19:22] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:19:22] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:19:23] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 14:19:23] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 755.122 ms - -[0m
+]
+[2020-04-23 14:19:23] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 2.931 ms - 155[0m
+]
+[2020-04-23 14:19:23] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:19:23] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:19:24] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:19:24] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:19:27] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2680.588 ms - 252[0m
+]
+[2020-04-23 14:19:27] [info] [app.ts] [[0mPOST /api/v1/login [33m401[0m 182.345 ms - 45[0m
+]
+[2020-04-23 14:19:27] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:19:27] [info] [mongo.ts] [Mongoose default connection is disconnected]

@@ -51,4 +51,23 @@ describe('GET /api/v1/users', () => {
         done();
       });
   });
+
+  it('It should NOT GET /api/v1/login', (done) => {
+    const body = {
+      email: 'jonathan.m2ndoza1@gmail.com1',
+      password: '123456jm-',
+    };
+
+    chai
+      .request(server)
+      .post('/api/v1/login')
+      .send(body)
+      .end((err, response) => {
+        response.should.have.status(401);
+        response.body.should.be.a('object');
+        response.body.should.have.property('status').eq('ERROR');
+        response.body.should.have.property('message').eq('User not found');
+        done();
+      });
+  });
 });
