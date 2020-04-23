@@ -207,5 +207,7 @@ jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-A
 
 
 #################################### Install Unit Test ####################################
-jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i -D mocha chai supertest
-
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm i -D mocha chai
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install -D chai-http
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install -D @types/chai
+jmendoza@jmendoza-ThinkPad-T420:~/IdeaProjects/NodeJS-API-Course/Advanced-Node-API$ npm install -D @types/mocha
