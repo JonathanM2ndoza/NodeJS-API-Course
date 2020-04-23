@@ -59,3 +59,8 @@ File: package.json
 ![Screenshot](prtsc/Advanced-Node-API-14.png)
 
 ![Screenshot](prtsc/Advanced-Node-API-15.png)
+
+### Example Mocha and Chai
+
+![Screenshot](prtsc/Advanced-Node-API-16.png)
+
