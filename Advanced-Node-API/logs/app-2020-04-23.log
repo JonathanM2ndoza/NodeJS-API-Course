@@ -1,0 +1,133 @@
+[2020-04-23 14:07:35] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:07:35] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:07:35] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:10:38] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:10:38] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:10:38] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:11:36] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:11:36] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:11:36] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 14:11:36] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 341.243 ms - -[0m
+]
+[2020-04-23 14:11:36] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 2.877 ms - 155[0m
+]
+[2020-04-23 14:11:36] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:11:36] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:11:37] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:11:37] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:11:40] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 2654.405 ms - 252[0m
+]
+[2020-04-23 14:11:40] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:11:40] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:12:08] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:12:08] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:12:08] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:12:12] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:12:12] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:12:13] [debug] [product.controllers.ts] [data] [{
+  _id: 5e9a7454b0ec3a161b45e945,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+},{
+  _id: 5e9a7464b0ec3a161b45e946,
+  title: 'Lenovo ThinkPad T580 111111',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 1111111',
+  price: 1.099,
+  user: {
+    role: 'seller',
+    _id: 5e9a7073211b6e11ab87b8d3,
+    username: 'jmendoza2',
+    email: 'jonathan.m2ndoza2@gmail.com',
+    data: { age: 30, isMale: true }
+  }
+},{
+  _id: 5e9a748fb0ec3a161b45e947,
+  title: 'Lenovo ThinkPad T580 222222',
+  desc: 'Lenovo ThinkPad T580 15.6 (1920x1080) IPS Anti-Glare Display - Intel i5-8250U Processor, 8GB RAM, 512GB PCIe-NVMe SSD, Windows 10 Pro 64-bit 2222222',
+  price: 2.099,
+  user: {
+    role: 'admin',
+    _id: 5e9a6fd2211b6e11ab87b8d2,
+    username: 'jmendoza1',
+    email: 'jonathan.m2ndoza1@gmail.com',
+    data: { age: 20, isMale: true }
+  }
+}]
+[2020-04-23 14:12:13] [info] [app.ts] [[0mGET /api/v1/products [32m200[0m 417.762 ms - -[0m
+]
+[2020-04-23 14:12:13] [info] [app.ts] [[0mGET /api/v1/products1 [33m404[0m 2.521 ms - 155[0m
+]
+[2020-04-23 14:12:13] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:12:13] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-23 14:12:14] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:12:14] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:12:17] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 3148.219 ms - 252[0m
+]
+[2020-04-23 14:12:17] [error] [mongo.ts] [uncaughtException: expected { Object (token, tokenExpire) } to have property 'tokena'
+AssertionError: expected { Object (token, tokenExpire) } to have property 'tokena'
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:46:39
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 14:12:17] [error] [mongo.ts] [uncaughtException: expected { Object (token, tokenExpire) } to have property 'tokena'
+AssertionError: expected { Object (token, tokenExpire) } to have property 'tokena'
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/test/products/users.ts:46:39
+    at Test.Request.callback (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:716:12)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/index.js:916:18
+    at IncomingMessage.<anonymous> (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)]
+[2020-04-23 14:12:41] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:12:41] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:12:41] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-23 14:13:07] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-23 14:13:07] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-23 14:13:07] [info] [app.ts] [NodeJS API listining on port: 3000]
