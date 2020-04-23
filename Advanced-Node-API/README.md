@@ -1,6 +1,6 @@
 # Advanced-Node-API
 
-Template for project structure with NodeJS (RESTful API) and Express, Mongo DB Atlas, JSON Web Token (JWT), TypeScript. Handle errors. 
+Template for project structure with NodeJS (RESTful API) and Express, Mongo DB Atlas, JSON Web Token (JWT), TypeScript. Handle errors. Promises, Async Await, Pretty code.
 
 Environment variables for development and production. Logging library. Best Practices for Node.js Development. Unit Test: BDD / TDD
 
