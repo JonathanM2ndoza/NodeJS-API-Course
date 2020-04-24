@@ -10,21 +10,21 @@ chai.should();
 chai.use(chaiHttp);
 
 describe('GET /api/v1/users', () => {
-  before(async () => {
+  /*before(async () => {
     try {
       await conn.connect();
     } catch (err) {
       console.log(err);
     }
-  });
+  });*/
 
-  after(async () => {
+  /*after(async () => {
     try {
       conn.close();
     } catch (err) {
       console.log(err);
     }
-  });
+  });*/
 
   let token: string;
 

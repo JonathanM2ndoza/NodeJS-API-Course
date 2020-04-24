@@ -10,7 +10,7 @@ chai.should();
 chai.use(chaiHttp);
 
 describe('GET /api/v1/products', () => {
-  before(async () => {
+  /*before(async () => {
     try {
       await conn.connect();
     } catch (err) {
@@ -24,7 +24,7 @@ describe('GET /api/v1/products', () => {
     } catch (err) {
       console.log(err);
     }
-  });
+  });*/
 
   it('GET /api/v1/products', (done) => {
     chai
