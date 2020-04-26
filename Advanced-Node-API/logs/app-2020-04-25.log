@@ -1,0 +1,251 @@
+[2020-04-25 00:00:30] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 00:00:30] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 19:29:52] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 19:29:52] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 19:29:52] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 19:32:15] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 9726.208 ms - 252[0m
+]
+[2020-04-25 19:33:12] [error] [security.ts] [jwt expired]
+[2020-04-25 19:33:12] [info] [app.ts] [[0mGET /api/v1/users/ [31m500[0m 49.511 ms - 42[0m
+]
+[2020-04-25 19:33:24] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-25 19:33:24] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 222.771 ms - 413[0m
+]
+[2020-04-25 19:34:02] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 9635.745 ms - 253[0m
+]
+[2020-04-25 19:34:36] [debug] [user.controllers.ts] [user] [{
+  role: 'seller',
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  password: '$2b$15$SrudN1I7RVNKb56OtZE3Z.1J4mDvG38GkuT65MtFSynilevqoG4GG',
+  data: { age: 45, isMale: true },
+  __v: 0
+}]
+[2020-04-25 19:34:36] [info] [app.ts] [[0mGET /api/v1/users/5e9cc04d727cfb426788d7b5 [32m200[0m 204.436 ms - 253[0m
+]
+[2020-04-25 19:34:44] [error] [security.ts] [Invalid role]
+[2020-04-25 19:34:44] [info] [app.ts] [[0mGET /api/v1/users/ [33m403[0m 6.557 ms - 43[0m
+]
+[2020-04-25 19:35:11] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-25 20:23:18] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:23:18] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:23:18] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 20:23:23] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-25 20:23:53] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:23:53] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:23:53] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 20:24:55] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 10305.265 ms - 253[0m
+]
+[2020-04-25 20:25:08] [error] [security.ts] [jwt expired]
+[2020-04-25 20:25:08] [info] [app.ts] [[0mGET /api/v1/users/ [31m500[0m 20.445 ms - 42[0m
+]
+[2020-04-25 20:25:12] [error] [security.ts] [Invalid role]
+[2020-04-25 20:25:12] [info] [app.ts] [[0mGET /api/v1/users/ [33m403[0m 6.639 ms - 43[0m
+]
+[2020-04-25 20:25:36] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 9739.200 ms - 252[0m
+]
+[2020-04-25 20:25:54] [error] [security.ts] [Invalid role]
+[2020-04-25 20:25:54] [info] [app.ts] [[0mGET /api/v1/users/ [33m403[0m 22.177 ms - 43[0m
+]
+[2020-04-25 20:25:58] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-25 20:25:58] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 134.691 ms - 413[0m
+]
+[2020-04-25 20:27:25] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:27:25] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:27:25] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 20:29:20] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:29:20] [error] [product.controllers.ts] [uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:392:12)
+    at writeOrBuffer (_stream_writable.js:374:5)
+    at WriteStream.Writable.write (_stream_writable.js:314:12)
+    at Console.log (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at DerivedLogger.EventEmitter.emit (domain.js:485:12)
+    at addChunk (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:298:12)]
+[2020-04-25 20:29:20] [error] [security.ts] [uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:392:12)
+    at writeOrBuffer (_stream_writable.js:374:5)
+    at WriteStream.Writable.write (_stream_writable.js:314:12)
+    at Console.log (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at DerivedLogger.EventEmitter.emit (domain.js:485:12)
+    at addChunk (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:298:12)]
+[2020-04-25 20:29:20] [error] [user.controllers.ts] [uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:392:12)
+    at writeOrBuffer (_stream_writable.js:374:5)
+    at WriteStream.Writable.write (_stream_writable.js:314:12)
+    at Console.log (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at DerivedLogger.EventEmitter.emit (domain.js:485:12)
+    at addChunk (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:298:12)]
+[2020-04-25 20:29:20] [error] [app.ts] [uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:392:12)
+    at writeOrBuffer (_stream_writable.js:374:5)
+    at WriteStream.Writable.write (_stream_writable.js:314:12)
+    at Console.log (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:327:22)
+    at DerivedLogger.EventEmitter.emit (domain.js:485:12)
+    at addChunk (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:298:12)]
+[2020-04-25 20:30:30] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:30:30] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:30:30] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 20:31:49] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:31:49] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:31:49] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 20:31:49] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:31:49] [error] [product.controllers.ts] [uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1313:16)
+    at listenInCluster (net.js:1361:12)
+    at Server.listen (net.js:1447:7)
+    at Function.listen (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/express/lib/application.js:618:24)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/src/app.ts:23:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]
+[2020-04-25 20:31:49] [error] [security.ts] [uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1313:16)
+    at listenInCluster (net.js:1361:12)
+    at Server.listen (net.js:1447:7)
+    at Function.listen (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/express/lib/application.js:618:24)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/src/app.ts:23:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]
+[2020-04-25 20:31:49] [error] [user.controllers.ts] [uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1313:16)
+    at listenInCluster (net.js:1361:12)
+    at Server.listen (net.js:1447:7)
+    at Function.listen (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/express/lib/application.js:618:24)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/src/app.ts:23:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]
+[2020-04-25 20:31:49] [error] [mongo.ts] [uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1313:16)
+    at listenInCluster (net.js:1361:12)
+    at Server.listen (net.js:1447:7)
+    at Function.listen (/home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/node_modules/express/lib/application.js:618:24)
+    at /home/jmendoza/IdeaProjects/NodeJS-API-Course/Advanced-Node-API/src/app.ts:23:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]
+[2020-04-25 20:33:36] [error] [security.ts] [jwt expired]
+[2020-04-25 20:33:36] [info] [app.ts] [[0mGET /api/v1/users/ [31m500[0m 39.684 ms - 42[0m
+]
+[2020-04-25 20:33:53] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 10100.318 ms - 252[0m
+]
+[2020-04-25 20:34:39] [error] [security.ts] [jwt expired]
+[2020-04-25 20:34:39] [info] [app.ts] [[0mGET /api/v1/users/ [31m500[0m 5.552 ms - 42[0m
+]
+[2020-04-25 20:34:42] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-25 20:34:42] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 238.745 ms - 413[0m
+]
+[2020-04-25 20:42:46] [info] [mongo.ts] [Mongoose default connection is disconnected]
+[2020-04-25 20:44:50] [info] [mongo.ts] [Mongoose default connection is open]
+[2020-04-25 20:44:50] [info] [app.ts] [Mongo DB Atlas. Connected]
+[2020-04-25 20:44:50] [info] [app.ts] [NodeJS API listining on port: 3000]
+[2020-04-25 20:44:56] [error] [security.ts] [jwt expired]
+[2020-04-25 20:44:56] [info] [app.ts] [[0mGET /api/v1/users/ [31m500[0m 38.597 ms - 42[0m
+]
+[2020-04-25 20:45:10] [info] [app.ts] [[0mPOST /api/v1/login [32m200[0m 9599.435 ms - 252[0m
+]
+[2020-04-25 20:45:22] [debug] [user.controllers.ts] [users] [{
+  _id: 5e9a6fd2211b6e11ab87b8d2,
+  username: 'jmendoza1',
+  email: 'jonathan.m2ndoza1@gmail.com',
+  data: { age: 20, isMale: true }
+},{
+  _id: 5e9a7073211b6e11ab87b8d3,
+  username: 'jmendoza2',
+  email: 'jonathan.m2ndoza2@gmail.com',
+  data: { age: 30, isMale: true }
+},{
+  _id: 5e9cc04d727cfb426788d7b5,
+  username: 'jmendoza3-3',
+  email: 'jonathan.m2ndoza3@gmail.com',
+  data: { age: 45, isMale: true }
+}]
+[2020-04-25 20:45:22] [info] [app.ts] [[0mGET /api/v1/users/ [32m200[0m 144.672 ms - 413[0m
+]

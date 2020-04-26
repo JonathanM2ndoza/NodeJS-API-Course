@@ -15,15 +15,6 @@ const connectionMongoDB = new ConnectionMongoDB();
 const app: Application = express();
 const port: number = environment.port;
 
-// Extend Express Request
-declare global {
-  namespace Express {
-    export interface Request {
-      sessionData: any;
-    }
-  }
-}
-
 // BD
 connectionMongoDB
   .connect()
