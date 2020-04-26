@@ -1,8 +1,8 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-//import { ConnectionMongoDB } from '../../src/config/database/mongo';
+import { ConnectionMongoDB } from '../../src/config/database/mongo';
 
-//const conn = new ConnectionMongoDB();
+const conn = new ConnectionMongoDB();
 const server = 'http://localhost:3000';
 
 //Assertion Style
